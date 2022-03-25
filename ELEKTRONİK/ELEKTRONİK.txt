@@ -1,0 +1,16 @@
+ELEKTRONİK
+Devre Teorisi
+Elektronik I-II
+Sayısal Elektronik 
+Sayısal Elektronik Sistem Tasarımı
+Algılıyıcılar ve Dönüştürücüler
+Mikrodenetleyiciler ve Programlanması
+Mikradenetleyici Tabanlı Sistem Tasarımı
+Gömülü Sistemler
+Elektrik Makinaları
+Endüstriyel Otomasyon
+Endüstriyel Elektronik
+Süreç Denetimi
+Otomatik Kontrol I-II
+Sistem Dinamiği ve Kontrolü
+
