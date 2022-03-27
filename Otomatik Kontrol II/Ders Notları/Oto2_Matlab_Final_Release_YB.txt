@@ -1,0 +1,511 @@
+
+
+clc;
+syms s
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% DEĞİŞTİR %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Gpay = sym2poly(     (s^0)   );			       % Verilen G(s) payı
+Gpayda = sym2poly(   (s)*(s+2)*(s+2)   );      % Verilen G(s) paydası
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%% REEL/SANAL EKSEN NOKTALARI GİRİŞİ %%%%%%%%%%%%%%%%
+
+asimOranigirisi = '??? Soruda %OS (yüzde aşım oranı) kaç olarak verilmiş? ';
+yuzdeOS = input(asimOranigirisi);
+
+ksi = (-log(yuzdeOS/100)) / (sqrt(pi^2 + log(yuzdeOS/100)^2));
+fprintf('\n\n---Hesaplanan sönüm oranı: Ksi = %.6f\n\n',ksi);
+
+fprintf('\nKök yer eğrisi çizdiriliyor. Lütfen bekleyiniz.\n');
+
+K=1;
+H=1; 
+
+G=tf(Gpay,Gpayda);
+
+root_locus_graph = figure;
+rlocus(G*K*H);
+T=feedback(G*K,H);
+wn=0;
+sgrid(ksi,wn);
+
+% pause(1.5);
+fprintf('\n??? Grafikteki kesişim noktasında reel kısmı kaç olarak ölçtünüz? (Eksi ve nokta kullanarak giriniz.)\n');
+
+reel = input('');
+fprintf('\n??? Grafikteki kesişim noktasında sanal kısmı kaç olarak ölçtünüz? (i olmadan giriniz.)\n');
+img = input('');
+
+% fprintf('\nKök yer eğrisi grafiğini kapatınız.\n\n');
+close(root_locus_graph);
+
+
+%%%%%%%%%%%%%%%%%%%%% KOMPANZATÖR SEÇİMİ %%%%%%%%%%%%%%%%%%%%%%%
+kompSecimi = input('\n??? Kompanzatör tipi giriniz: (PD veya LEAD)\n(Soruda Zc veya Pc verilmeden tepe/yükselme zamanı düşürülmesi isteniyorsa PD giriniz.)\n(Soruda Zc veya Pc verilmiş diğerini soruyorsa LEAD giriniz.)\n','s');
+kompSecimi = upper(kompSecimi);
+
+switch kompSecimi
+    case 'PD'
+	fprintf('\nPD seçtiniz. Bu kompanzatör aktif (ideal) bir kompanzatördür.\nTepe/Yerleşme zamanlarını (geçici cevap) düşürmek için kullanılır. \nTransfer fonksiyonunun payına bir sıfır (Zc) ekler.\nPD için genel formül: G(s) = (s + Zc)\n\n');
+	giris = '??? Tepe zamanı ya da yerleşme zamanını kaç kat düşürmek istiyorsunuz? ';
+	dusurmeKatsayisi = input(giris);
+	reel = dusurmeKatsayisi * reel;
+	img = dusurmeKatsayisi * img;
+	fprintf('\n////////////////////////////////////////////////////////////\n');
+	fprintf('\n---Kompanzasyon sonrası yeni reel kısım = %.5f\n',reel);
+	fprintf('---Kompanzasyon sonrası yeni sanal kısım = %.5f\n',img);
+	Wn = (-1)*reel / ksi;			% yeni doğal frekans
+	fprintf('---Kompanzasyon sonrası yeni doğal frekans: Wn = %.5f\n',Wn);
+	
+
+	%%%%%%% KUTUPLAR ve SIFIRLARI BULMA İŞLEMİ %%%%%%%
+	Psifirlar=roots(Gpay)
+	Pkutuplar=roots(Gpayda)
+	fprintf('Kompanzasyon öncesi G(s) transfer fonksiyonunun sıfırları ve kutupları yukarıya yazıldı.\n\n');
+
+	sifirSayisi= length(Psifirlar);
+	kutupSayisi= length(Pkutuplar);
+
+
+	for i=1:kutupSayisi
+	istenen = Pkutuplar(i);
+		if (istenen<reel)
+			kutupAcilari(i)=atand(img/(abs(istenen-reel)));
+		elseif (istenen>reel)
+			kutupAcilari(i)=180-(atand(img/(abs(istenen-reel))));
+		else
+			kutupAcilari(i)=90;
+		end
+		fprintf('\nP%d = %.10f derece',i,kutupAcilari(i));
+	end
+
+	
+	%% Eğer G(s) fonksiyonun PAY'ında sıfır yoksa çalışmayacak. (PAY=1 ise)
+	if not(sifirSayisi==0)
+		for i=1:sifirSayisi
+		istenen = Psifirlar(i);
+			if (istenen<reel)
+				sifirAcilari(i)=atand(img/(abs(istenen-reel)));
+			elseif (istenen>reel)
+				sifirAcilari(i)=180-(atand(img/(abs(istenen-reel))));
+			else
+				sifirAcilari(i)=90;
+			end
+			fprintf('\nZ%d = %.10f derece',i,sifirAcilari(i));
+		end
+	end
+
+	fprintf('\n---G(s) transfer fonksiyonunun sıfırları ve kutuplarının yatayla yaptıkları açılar yukarıya yazıldı. (P:kutup, Z:sıfır)\n');
+
+
+
+	%%%%%%% TetaZ BULMA İŞLEMİ %%%%%%%
+	kutupAcilariToplami = 0;
+	for i=1:kutupSayisi
+		kutupAcilariToplami = kutupAcilariToplami + (-1)*kutupAcilari(i);
+	end
+
+
+
+	sifirAcilariToplami = 0;
+	for i=1:sifirSayisi
+		sifirAcilariToplami = sifirAcilariToplami + (+1)*sifirAcilari(i);
+	end
+
+
+    	
+
+	syms tetaZ
+	denklem = kutupAcilariToplami + sifirAcilariToplami + tetaZ==-180;
+	zcAcisi=solve(denklem,tetaZ);
+	tetaZ=vpa(zcAcisi);
+	fprintf('\n---Zc nin yatayla yaptığı açı (tetaZ) = %.5f derece \n',tetaZ);
+
+        % ??? yeni Zc noktası reel kısmın sağındaysa 180-zc lazım mı? Galiba hayır.
+
+
+
+
+	%%%%%%% Zc BULMA İŞLEMİ %%%%%%%
+
+
+
+	if (tetaZ<90)
+		syms zc
+		denklemZc = tand(tetaZ) == img/(zc-((-1)*reel));
+ 		cozumZc = solve(denklemZc, zc);
+		zc=vpa(cozumZc); %sadeleştirme işlemi
+		
+	elseif (tetaZ>90)
+		syms zc
+		denklemZc = tand(tetaZ) == img/(((-1)*reel)-zc);
+ 		cozumZc = solve(denklemZc, zc);
+		zc=vpa(cozumZc); %sadeleştirme işlemi
+		
+	else
+		syms zc
+		zc=(-1)*reel;	% açı 90'dan büyük veya küçük değilse tam 90'dır. Zc ise reel kısım üzerindedir.
+		
+	end
+	fprintf('\n---Zc nin reel eksendeki konumu = %.5f \n',(-1)*zc);
+			
+	% zc ekle
+
+	%%%%%%% HESAPLANAN Zc'yi SIFIRLARA EKLEME İŞLEMİ %%%%%%%
+	Psifirlar(end+1) = (-1)*zc;	%Zc'yi artılı bulduk ama yatay eksende eksi tarafta. eksi ile çarparız.
+	sifirSayisi= length(Psifirlar);	%Sıfır sayısı güncellendi çünkü yeni sıfır ekledik. (Zc)
+	kutupSayisi= length(Pkutuplar);
+
+
+
+	%%%%%%% YENİ KAZANÇ (K, GAIN) HESAPLAMA İŞLEMİ %%%%%%%
+	
+	for i=1:kutupSayisi
+		istenen = Pkutuplar(i);
+
+		if (istenen<reel)
+		L_Kutup_Uzunluklari(i) = sqrt( img^2 + ( (-1)*istenen - (-1)*reel )^2 );
+		elseif (istenen>reel)
+		L_Kutup_Uzunluklari(i) = sqrt( img^2 + ( (-1)*reel - (-1)*istenen )^2 );
+		else
+		L_Kutup_Uzunluklari(i) = img;
+		end
+	end
+
+	for i=1:sifirSayisi
+		istenen = Psifirlar(i);
+
+		if (istenen<reel)
+		L_Sifir_Uzunluklari(i) = sqrt( img^2 + ( (-1)*istenen - (-1)*reel )^2 );
+		elseif (istenen>reel)
+		L_Sifir_Uzunluklari(i) = sqrt( img^2 + ( (-1)*reel - (-1)*istenen )^2 );
+		else
+		L_Sifir_Uzunluklari(i) = img;
+		end
+	end
+	
+	toplamPCarpimi=1;
+	for i=1:kutupSayisi
+		toplamPCarpimi = toplamPCarpimi * L_Kutup_Uzunluklari(i);
+	end
+
+	toplamZCarpimi=1;
+	for i=1:sifirSayisi
+		toplamZCarpimi = toplamZCarpimi * L_Sifir_Uzunluklari(i);
+	end
+
+	K= toplamPCarpimi / toplamZCarpimi;
+	fprintf('\n---Kompanzasyon sonrası kazanç (K, Gain) değeri = %.5f \n',K);
+	
+
+
+	%%%%%%% KUTUPLAR ve SIFIRLAR İÇİN GRAFİK ÇİZDİRME İŞLEMİ %%%%%%%
+	for i=1:kutupSayisi
+    		plot([Pkutuplar(i),reel], [0,img],'-b')
+		hold on
+		grid on
+		axis on
+	end
+
+	for i=1:sifirSayisi
+    		plot([Psifirlar(i),reel], [0,img],'-r')
+		hold on
+		grid on
+		axis on
+	end
+
+	xline(reel,'--k');
+	xline(0,'-k')
+	yline(0,'-k')
+
+	fprintf('\nKompanze edilen transfer fonksiyonu için kutup ve sıfırların grafiği çizdirilmiştir. \nMavi çizgiler kutupları, kırmızı çizgiler ise sıfırların konumlarını göstermektedir.\n');
+
+fprintf('Uzunlukları öğrenmek isterseniz "L_Sifir_Uzunluklari" veya "L_Kutup_Uzunluklari" yazınız.\n\n');
+
+
+	%%%%%%% KOMPANZATÖR İÇİN G(s) TRANSFER FONKSİYONU YAZMA İŞLEMİ %%%%%%%
+	fprintf('\n/////////////////////////////////////////////////////////////\n');
+	fprintf('\nPD kompanzatörün transfer fonksiyonu:    G(s) = (s + %.5f)\n\n',zc);
+	fprintf('/////////////////////////////////////////////////////////////\n\n');
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%% LEAD SEÇİLİRSE %%%%%%%%%%%%%%%%%%%%%%%
+
+
+    case 'LEAD'
+	fprintf('\nLEAD seçtiniz. Bu kompanzatör pasif bir kompanzatördür.\nTepe/Yerleşme zamanlarını (geçici cevap) düşürmek için kullanılır. \nTransfer fonksiyonunun payına bir sıfır (Zc) ve paydasına bir kutup (Pc) ekler.\nLEAD için genel formül: G(s) = (s + Zc) / (s + Pc)\n\n');
+	giris = '??? Tepe zamanı ya da Yerleşme zamanını kaç kat düşürmek istiyorsunuz? ';
+	dusurmeKatsayisi = input(giris);
+
+
+	reel = dusurmeKatsayisi * reel;
+	img = dusurmeKatsayisi * img;
+	Wn = (-1)*reel / ksi;			% yeni doğal frekans
+
+	Psifirlar=roots(Gpay);
+	Pkutuplar=roots(Gpayda);
+
+
+	%%%%%%% SORUDA VERİLEN ZC veya PC'yi KUTUPLARA veya SIFIRLARA EKLEME İŞLEMİ %%%%%%%
+
+	giris2 = '??? Soruda hangisi verilmiş?  (ZC veya PC) ';
+	zc_pc_tercihi = input(giris2,'s');
+	zc_pc_tercihi = upper(zc_pc_tercihi);
+
+	if (zc_pc_tercihi=='ZC')
+		giris3 = '??? Soruda verilen ZC (sıfır) değerini eksi ve nokta kullanarak giriniz:  ';
+		verilen_zc = input(giris3);
+		Psifirlar(end+1)=verilen_zc;
+	elseif (zc_pc_tercihi=='PC')
+		giris3 = '??? Soruda verilen PC (kutup) değerini eksi ve nokta kullanarak giriniz:  ';
+		verilen_pc = input(giris3);
+		Pkutuplar(end+1)=verilen_pc;
+	end
+
+	
+
+	%%%%%%% KUTUPLAR ve SIFIRLARI BULMA İŞLEMİ %%%%%%%
+	Psifirlar
+	Pkutuplar
+	fprintf('Kompanzasyon öncesi G(s) transfer fonksiyonunun sıfırları ve kutupları yukarıya yazıldı. (Soruda verilen PC veya ZC dahil edilerek)\n');
+
+	sifirSayisi= length(Psifirlar);
+	kutupSayisi= length(Pkutuplar);
+
+
+	fprintf('\n---Kompanzasyon sonrası yeni reel kısım = %.5f\n',reel);
+	fprintf('---Kompanzasyon sonrası yeni sanal kısım = %.5f\n',img);
+	fprintf('---Kompanzasyon sonrası yeni doğal frekans: Wn = %.5f\n',Wn);
+
+
+	for i=1:kutupSayisi
+	istenen = Pkutuplar(i);
+		if (istenen<reel)
+			kutupAcilari(i)=atand(img/(abs(istenen-reel)));
+		elseif (istenen>reel)
+			kutupAcilari(i)=180-(atand(img/(abs(istenen-reel))));
+		else
+			kutupAcilari(i)=90;
+		end
+		fprintf('\nP%d = %.10f derece',i,kutupAcilari(i));
+	end
+
+	
+	%% Eğer G(s) fonksiyonun PAY'ında sıfır yoksa çalışmayacak. (PAY=1 ise)
+	if not(sifirSayisi==0)
+		for i=1:sifirSayisi
+		istenen = Psifirlar(i);
+			if (istenen<reel)
+				sifirAcilari(i)=atand(img/(abs(istenen-reel)));
+			elseif (istenen>reel)
+				sifirAcilari(i)=180-(atand(img/(abs(istenen-reel))));
+			else
+				sifirAcilari(i)=90;
+			end
+			fprintf('\nZ%d = %.10f derece',i,sifirAcilari(i));
+		end
+	end
+
+	fprintf('\n---G(s) transfer fonksiyonunun sıfırları ve kutuplarının yatayla yaptıkları açılar yukarıya yazıldı. (P:kutup, Z:sıfır)\n');
+
+
+
+	%%%%%%% TOPLAM KUTUP/SIFIR AÇILARI BULMA İŞLEMİ %%%%%%%
+	kutupAcilariToplami = 0;
+	for i=1:kutupSayisi
+		kutupAcilariToplami = kutupAcilariToplami + (-1)*kutupAcilari(i);
+	end
+
+
+
+	sifirAcilariToplami = 0;
+	for i=1:sifirSayisi
+		sifirAcilariToplami = sifirAcilariToplami + (+1)*sifirAcilari(i);
+	end
+
+
+	%%%%%%% TETAC YA DA TETAP AÇILARI BULMA İŞLEMİ %%%%%%%
+
+	if (zc_pc_tercihi=='ZC')	%Zc verilmiş Pc isteniyor.
+		syms tetaP
+		denklem = kutupAcilariToplami + sifirAcilariToplami - tetaP == -180;
+		pcAcisi=solve(denklem,tetaP);
+		tetaP=vpa(pcAcisi);
+		fprintf('\n---Pc nin yatayla yaptığı açı (tetaP) = %.5f derece \n',tetaP);
+	elseif (zc_pc_tercihi=='PC')	%Pc verilmiş Zc isteniyor.
+		syms tetaZ
+		denklem = kutupAcilariToplami + sifirAcilariToplami + tetaZ == -180;
+		zcAcisi=solve(denklem,tetaZ);
+		tetaZ=vpa(zcAcisi);
+		fprintf('\n---Zc nin yatayla yaptığı açı (tetaZ) = %.5f derece \n',tetaZ);
+	end
+
+
+
+
+
+	%%%%%%% ZC YA DA PC BULMA İŞLEMİ %%%%%%%
+
+
+	if (zc_pc_tercihi=='ZC')	%Zc verilmiş Pc isteniyor.
+		if (tetaP<90)
+			syms pc
+			denklemPc = tand(tetaP) == img/(pc-((-1)*reel));
+ 			cozumPc = solve(denklemPc, pc);
+			pc=vpa(cozumPc); %sadeleştirme işlemi
+		
+		elseif (tetaP>90)
+			syms pc
+			denklemPc = tand(tetaP) == img/(((-1)*reel)-pc);
+ 			cozumPc = solve(denklemPc, pc);
+			pc=vpa(cozumPc); %sadeleştirme işlemi
+		
+		else
+			syms pc
+			pc=(-1)*reel;	% açı 90'dan büyük veya küçük değilse tam 90'dır. Zc ise reel kısım üzerindedir.
+		
+		end
+		fprintf('\n---Pc nin reel eksendeki konumu = %.5f \n',(-1)*pc);	
+
+	elseif (zc_pc_tercihi=='PC')	%Pc verilmiş Zc isteniyor.
+		if (tetaZ<90)
+			syms zc
+			denklemZc = tand(tetaZ) == img/(zc-((-1)*reel));
+ 			cozumZc = solve(denklemZc, zc);
+			zc=vpa(cozumZc); %sadeleştirme işlemi
+		
+		elseif (tetaZ>90)
+			syms zc
+			denklemZc = tand(tetaZ) == img/(((-1)*reel)-zc);
+ 			cozumZc = solve(denklemZc, zc);
+			zc=vpa(cozumZc); %sadeleştirme işlemi
+		
+		else
+			syms zc
+			zc=(-1)*reel;	% açı 90'dan büyük veya küçük değilse tam 90'dır. Zc ise reel kısım üzerindedir.
+		
+		end
+		fprintf('\n---Zc nin reel eksendeki konumu = %.5f \n',(-1)*zc);
+	end
+
+
+
+
+	%%%%%%% HESAPLANAN Zc'yi SIFIRLARA EKLEME İŞLEMİ %%%%%%%
+
+	if (zc_pc_tercihi=='ZC')	%Zc verilmiş Pc isteniyor.
+		Pkutuplar(end+1) = (-1)*pc;	%Pc'yi artılı bulduk ama yatay eksende eksi tarafta. eksi ile çarparız.	
+	elseif (zc_pc_tercihi=='PC')	%Pc verilmiş Zc isteniyor.
+		Psifirlar(end+1) = (-1)*zc;	%Zc'yi artılı bulduk ama yatay eksende eksi tarafta. eksi ile çarparız.	
+	end
+
+
+	sifirSayisi= length(Psifirlar);	%Sıfır sayısı güncellendi çünkü yeni sıfır ekledik. (Zc)
+	kutupSayisi= length(Pkutuplar);	%Kutup sayısı güncellendi çünkü yeni kutup ekledik. (Pc)
+
+
+
+	%%%%%%% YENİ KAZANÇ (K, GAIN) HESAPLAMA İŞLEMİ %%%%%%%
+	
+	for i=1:kutupSayisi
+		istenen = Pkutuplar(i);
+
+		if (istenen<reel)
+		L_Kutup_Uzunluklari(i) = sqrt( img^2 + ( (-1)*istenen - (-1)*reel )^2 );
+		elseif (istenen>reel)
+		L_Kutup_Uzunluklari(i) = sqrt( img^2 + ( (-1)*reel - (-1)*istenen )^2 );
+		else
+		L_Kutup_Uzunluklari(i) = img;
+		end
+	end
+
+	for i=1:sifirSayisi
+		istenen = Psifirlar(i);
+
+		if (istenen<reel)
+		L_Sifir_Uzunluklari(i) = sqrt( img^2 + ( (-1)*istenen - (-1)*reel )^2 );
+		elseif (istenen>reel)
+		L_Sifir_Uzunluklari(i) = sqrt( img^2 + ( (-1)*reel - (-1)*istenen )^2 );
+		else
+		L_Sifir_Uzunluklari(i) = img;
+		end
+	end
+	
+	toplamPCarpimi=1;
+	for i=1:kutupSayisi
+		toplamPCarpimi = toplamPCarpimi * L_Kutup_Uzunluklari(i);
+	end
+
+	toplamZCarpimi=1;
+	for i=1:sifirSayisi
+		toplamZCarpimi = toplamZCarpimi * L_Sifir_Uzunluklari(i);
+	end
+
+	K= toplamPCarpimi / toplamZCarpimi;
+	fprintf('\n---Kompanzasyon sonrası kazanç (K, Gain) değeri = %.5f \n',K);
+	
+
+
+%%%%%%% KUTUPLAR ve SIFIRLAR İÇİN GRAFİK ÇİZDİRME İŞLEMİ %%%%%%%
+	for i=1:kutupSayisi
+    		plot([Pkutuplar(i),reel], [0,img],'-b')
+		hold on
+		plot(Pkutuplar(i),0,'bx'); hold on;
+		grid on
+		axis on
+	end
+
+
+	for i=1:sifirSayisi
+    		plot([Psifirlar(i),reel], [0,img],'-r')
+		hold on
+		plot(Psifirlar(i),0,'ro'); hold on;
+		grid on
+		axis on
+	end
+
+
+	ylabel('Sanal Eksen');
+	xlabel('Reel Eksen');
+	xline(reel,'--k');
+	yline(img,'--k');
+	xline(0,'-k')
+	yline(0,'-k')
+		
+
+		fprintf('\nKompanze edilen transfer fonksiyonu için kutup ve sıfırların grafiği çizdirilmiştir. \nMavi çizgiler kutupları, kırmızı çizgiler ise sıfırların konumlarını göstermektedir.\n');
+
+fprintf('Uzunlukları öğrenmek isterseniz "L_Sifir_Uzunluklari" veya "L_Kutup_Uzunluklari" yazınız.\n\n');
+
+
+
+	%%%%%%% KOMPANZATÖR İÇİN G(s) TRANSFER FONKSİYONU YAZMA İŞLEMİ %%%%%%%
+
+	if (zc_pc_tercihi=='ZC')	% Zc verilmiş Pc isteniyor.
+		
+		fprintf('\n/////////////////////////////////////////////////////////////\n');
+		fprintf('\nLEAD kompanzatörün transfer fonksiyonu:    G(s) = (s + %.5f) / (s + %.5f)\n\n',(-1)*verilen_zc,pc);
+		fprintf('/////////////////////////////////////////////////////////////\n\n');
+
+	elseif (zc_pc_tercihi=='PC')	% Pc verilmiş Zc isteniyor.
+		
+		fprintf('\n/////////////////////////////////////////////////////////////\n');
+		fprintf('\nLEAD kompanzatörün transfer fonksiyonu:    G(s) = (s + %.5f) / (s + %.5f)\n\n',zc,(-1)*verilen_pc);
+		fprintf('/////////////////////////////////////////////////////////////\n\n');
+	end
+
+    otherwise
+        disp('Hatalı giriş yaptınız. Lütfen en baştan başlayınız.')
+	return
+end

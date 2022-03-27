@@ -1,0 +1,17 @@
+
+
+
+syms s
+
+%%%%%%%%%%%%%%%% DEĞİŞTİR %%%%%%%%%%%%%%%%
+
+Gpay = sym2poly(    10*(s+1)  );
+Gpayda = sym2poly(  5*(s+5)   );
+
+%%%%%%%%%%%%%%%% DEĞİŞTİR %%%%%%%%%%%%%%%%
+
+G=tf(Gpay,Gpayda);
+bode(G); 
+grid on
+h = gcr;
+setoptions(h,'MagUnits','abs');

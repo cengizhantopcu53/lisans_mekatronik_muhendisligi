@@ -1,0 +1,96 @@
+
+
+-- Hangisi kök yer eğrisinin segmentidir? Birleşme noktaları, ayrılma noktaları, asimptot açıları, sanal ekseni kestiği noktadaki kazanç(K) değeri, eğrinin reel/sanal ekseni kestiği noktalar, kompleks kutuplardan ayrılma/birleşme açıları sorulursa... 
+https://lpsa.swarthmore.edu/Root_Locus/RLDraw.html
+(altttaki radiobutton'lardan birinde cevap kesinlikle vardır)
+
+
+-- %OS ve transfer fonksiyonu G(s) verip, kazanç katsayısı(K), kararlı hal hatası, tepe zamanı, yerleşme zamanı, yükselme zamanı, sönüm oranı, doğal frekansı sorarsa;
+   MATLAB K BUL KODU
+	** Matlab kodunda %OS'yi ve G(s) fonksiyonu yerine yaz. ENTER
+	** Grafiklerin tam kesiştiği noktayı işaretle. (Biraz zoom yapıp işaretlemek daha hassas sonuç verir, hoca şıklarda yakın değerler verebiliyor)
+	** Kesişim noktasında reel kısım, sanal kısım, Kazanç (Gain, K), Doğal Frekans gösterilir.
+	** Yerleşme zamanı = 4/reel kısım
+	** Tepe zamanı = pi/sanal kısım  (sanal kısım i'li kısımdır)
+	** Yükselme zamanı için tablo var. 4 işlem.
+		
+		1.  Matlab K Bul koduna G(s) ve %OS'i yaz. Kesiştikleri noktadaki Wn(doğal frekans)'ı bul. (En alttaki frequency yazan yer)
+		2.  Matlab K Bul koduna %OS yazıldığında, Ksi'yi (sönüm oranı) ekrana yazdırır.
+		3.  Yükselme tablosunu aç. Bulunan Ksi'karşılık gelen değeri bul.
+		4.  Karşılık gelen değer = Wn * Tr	(Tr: yükselme zamanı) (Wn: az önce bulunan doğal frekans)
+		5.  Denklemde Tr çekilirse Yükselme zamanı bulunur.
+
+
+-- (s-2) / (s+3) gibi bir fonksiyonda  s = 2-j6 gibi sayının genliği ya da faz açısı sorulursa;
+WOLFRAMALPHA'da yerine yaz.  (j6 sayısını 6i şeklinde yazmak gerekiyor) (faz açısı sorulursa sonucun sonuna "to degrees" yaz, sonucu derece olarak görmemiz gerek, çünkü matlab dahil her yerde standart olarak radyan kullanılıyor.)
+
+
+
+-- GENLİK/FAZ AÇISI ve frekans cevabı sorularında, TABLO ve G(s) verilip, belli bir w (frekans) değeri için genlik ya da faz açısı değeri sorulursa;
+   MATLAB BODE KODU   (w=0 ve w=sonsuz için değerleri bulmak için grafikte zoom out yapmak gerekiyor)
+		...
+		Genlik için kırılma frekansı (kritik frekans) pay'da veya payda'daki çarpanlardır. örn: (s+2) varsa w=2'dir. (s+3) varsa w=3'tür.
+		Faz açısı için kırılma frekansı (kritik frekans) pay'da veya payda'daki çarpanların 0.1 katı ya da 10 katıdır. (s+2) varsa 2'nin 10'da biri ya da 10 katıdır.
+		(bkz: Ders: 15.hafta dk 3.19)
+
+
+
+-- KARARLI HAL HATASI
+   Kararlı_hal_hatası.png
+	** Önce mutlaka K bulunması gerekiyor.
+	** K bulmak için aynı adımlar. Matlab'de %OS ve G(s) yaz. Kesişim noktası işaretlenirse Gain yazan yer K değeridir. (K: Kazanç: Gain)
+	** K bulduktan sonra, soruyu oku. Girişine step/ramp/parabol hangi fonk. uygulanmış yazıyorsa, hata tablosunda o bölüme bakılır. (Kp/Kv/Ka: statik hata sabitidir. Hata değil.)
+	** Önce K yerine koyulup, G(s) yazılır. Varsa s sadeleştirmesi yapılır. s=0 verilir. Çarpım yapılır. Kp/Kv/Ka bulunur.  ( 1/0 = sonsuz  ve  1/sonsuz = 0'dır)
+	** Kv/Kp/Ka bulunduktan sonra ess formülünde yerine yazılıp hata bulunur.  (ess: kararlı hal hatası)
+
+-- Aktif(ideal) ve Pasif komp. tablosu ( s zc pc formülleri ile)
+
+-- Aktif(ideal) ve Pasif komp. tablosu ( R1 R2 C1 C2 devre formülleri ile)
+
+
+-- Devre Soruları (Kompanzatör tasarımı) 
+   (Örnek soru tipleri: zc ya da pc'nin reel eksenle yaptığı açı, zc ya da pc'nin reel eksendeki konumu, kompanzasyon sonrası yeni K değeri, L uzunlukları, R1/R2/C1/C2 değerleri... )
+	1.  Soruda ne isteniyor? (Ts Tp düşürme, hata azaltma veya hem hata azaltma hem de Ts Tp düşürme)
+	1.  Hangi kompanzatör tipi olduğunu belirleme (aktif veya pasif istenmesine göre tercih yapılır)
+	2.  Verilmemişse zc ya da pc bulma.
+	3.  Kompanzatör için transfer fonk. yazma.
+	4.  Kompanzatörün yeni bulunan G(s) transfer fonksiyonu ile tablodaki devre formülünü birbirine eşitleme. R1 R2 C1 C2 bulma.
+	5.  L uzunluklarını bulduktan sonra K bulma.
+[ÇÖZÜM]
+Oto2_Matlab_Final_Release_YB KODU
+Aktif_kompanzatör_formülleri_Oto2.png
+Pasif_kompanzatör_formülleri_Oto2.png
+
+
+
+-- Pasif Kompanzatörler 3 tane (Lag, Lead, Lag-Lead)
+-- Aktif Kompanzatörler 5 tane (PI, PD, PID, Lag, Lead)
+
+-- PI ve Lag : hata oranı düşürür.  (PI hatayı sıfırlar, Lag hatayı belirli oranda azaltır)
+-- PD ve Lead : tepe zamanı, yerleşme zamanı (geçici cevap) düşürür.
+-- PID ve Lag-Lead : hem hata düşürür; hem de tepe zamanı, yerleşme zamanı düşürür.
+
+
+!! Lag'de Zc > Pc olmalı
+!! Lead'de Pc > Zc olmalı
+
+
+!! PI'da Zc 0'a yakın seçilir. (örn: 0.01 gibi)
+!! Lag'de Pc 0'a yakın seçilir. 
+
+
+!! Hatayı 10 kat düşürün derse:			zc/pc = 10 olmalı. Hangi komp. tipi seçildiğine göre zc ya da pc'ye 0'a yakın küçük bir değer (örn: zc=0.01) verilip diğeri bulunabilir.
+
+!! Hata verip, hatayı 10 kat düşürün derse:	
+				eskiHata/yeniHata = 10 olmalı. 
+				Yeni hatayı (ess) biliyorsak, girişe uygulanan step/ramp/parabol fonk. göre Kp/Kv/Ka bulabiliriz.
+				Kp/Kv/Ka biliyorsak K değerini bulabiliriz.
+
+!! Sistem tipi, payda'daki yalnız duran s çarpanının üssüdür. (örn: payda'da yalnız başına s çarpanı yoksa, s^0 'dan Tip0 sistemdir.)
+
+!! Pay'a 0 eklenirse kol sayısı düşer.		(asimptot sayısını 1 düşer)
+!! Payda'ya 0 eklenirse kol sayısı artar.	(asimptot sayısını 1 artar)
+!! Pay ve payda'ya aynı anda 0 eklenirse kol sayıları sabit kalır.
+
+
+

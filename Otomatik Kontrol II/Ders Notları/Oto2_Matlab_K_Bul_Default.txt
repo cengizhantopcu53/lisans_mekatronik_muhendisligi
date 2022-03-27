@@ -1,0 +1,24 @@
+
+
+syms s
+
+
+%%%%%%%%%%%%%%%% DEĞİŞTİR %%%%%%%%%%%%%%%%
+% Gpay = 1;
+
+Gpay = sym2poly(    s^0    );				% DEĞİŞTİR:  G(s) fonksiyonu payı
+Gpayda = sym2poly(  s*(s+2)*(s+2)   );		% DEĞİŞTİR:  G(s) fonksiyonu paydası
+yuzdeOS=  6.3  ;					        % DEĞİŞTİR:  Soruda verilen % OS (aşım oranı)
+
+%%%%%%%%%%%%%%%% DEĞİŞTİR %%%%%%%%%%%%%%%%
+
+ksi = (-log(yuzdeOS/100)) / (sqrt(pi^2 + log(yuzdeOS/100)^2));
+fprintf('\n\n---Hesaplanan sönüm oranı: Ksi = %.6f\n\n\n',ksi);
+G=tf(Gpay,Gpayda);
+figure
+K=1;
+H=1; 
+rlocus(G*K*H)
+T=feedback(G*K,H);
+wn=0;
+sgrid(ksi,wn)
