@@ -17,11 +17,8 @@ Statik
 Biyomekanik
 Dinamik
 Makine Dinamiği
-Mekanik Sistemlerin Dinamiği
-Mekanik Titreşim
 Mukavemet
 Akışkanlar Mekaniği
-Hidrolik ve Pnömatik
 Makine Elemanları
 Bilgisayar Destekli Tasarım
 
@@ -51,7 +48,6 @@ Veri Haberleşme Sistemleri
 Sayısal Sinyal İşleme
 Robot Teorisi
 Robot Tasarımı ve Kontrolü
-Robotik Kodlama
 
 GENEL EĞİTİM
 Atatürk İlkeleri ve İnkilap Tarihi I-II
