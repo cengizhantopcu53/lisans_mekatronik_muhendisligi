@@ -1,0 +1,7 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="Geom 1")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
