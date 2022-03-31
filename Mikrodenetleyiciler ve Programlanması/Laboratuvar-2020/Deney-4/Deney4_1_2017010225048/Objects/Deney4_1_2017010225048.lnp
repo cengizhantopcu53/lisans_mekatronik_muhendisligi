@@ -1,0 +1,3 @@
+".\Objects\timer.obj" 
+TO ".\Objects\Deney4_1_2017010225048" 
+PRINT(".\Listings\Deney4_1_2017010225048.m51") RAMSIZE(256) 

@@ -1,0 +1,3 @@
+".\Objects\button_led.obj" 
+TO ".\Objects\Lab_Ornek1" 
+PRINT(".\Listings\Lab_Ornek1.m51") RAMSIZE(256) 

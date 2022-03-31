@@ -1,0 +1,65 @@
+A51 MACRO ASSEMBLER  LED_BLINK                                                            11/25/2020 19:28:44 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\led_blink.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE led_blink.a51 SET(SMALL) DEBUG PRINT(.\Listings\led_blink.lst) OBJECT(.
+                      \Objects\led_blink.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu
+                       2     ; Gun              : 25 Kasim 2020                    
+                       3     ; Dosya ismi       : led_blink.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : P3.4'e bagli 100 ms'lik LED blink uygulamasi 
+                       6     
+                       7     $mod51                                  ; 8051 ON TANIMLAMASI YAPILDI
+                       8             
+  00B4                 9     LED     EQU     P3.4                   ; P3.4 LED DEGISKENI
+  00DF                10     PLLCON  EQU     0DFH                   ; PLL CONTROL REGISTER ADRESI
+                      11             
+----                  12     CSEG
+0000                  13             ORG 0000H 
+                      14                     
+0000 75DF00           15             MOV    PLLCON,#00H                ; ISLEMCI 2.097 MHz AYARLANDI
+0003 7405             16                 MOV    A,#5                       ; A SABIt DEGER ATAMASI
+                      17             
+0005                  18     BLINK: 
+0005 B2B4             19             CPL    LED                        ; LED TOOGLE ISLEMI
+0007 110B             20                 CALL   DELAY                      ; YAZILIMSAL BEKLEME
+0009 80FA             21                 JMP    BLINK                      ; ISLEMIN TEKRARLANMASI
+                      22              
+000B                  23     DELAY:
+000B F9               24             MOV    R1,A                       ; A DEGERI R1'E ALINDI
+                      25              
+000C 7A1C             26     DLY0:   MOV    R2,#01CH                   ; LOOP1 BEKLEME DEGERI
+000E 7BF8             27     DLY1:   MOV    R3,#0F8H                   ; LOOP2 BEKLEME DEGERI
+0010 DBFE             28             DJNZ   R3,$ 
+0012 DAFA             29                     DJNZ   R2,DLY1
+0014 D9F6             30                     DJNZ   R1,DLY0
+0016 22               31                     RET
+                      32                     
+                      33     END
+                                      
+A51 MACRO ASSEMBLER  LED_BLINK                                                            11/25/2020 19:28:44 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BLINK. . . . . . .  C ADDR   0005H   A   
+DELAY. . . . . . .  C ADDR   000BH   A   
+DLY0 . . . . . . .  C ADDR   000CH   A   
+DLY1 . . . . . . .  C ADDR   000EH   A   
+LED. . . . . . . .  B ADDR   00B0H.4 A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PLLCON . . . . . .  N NUMB   00DFH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
