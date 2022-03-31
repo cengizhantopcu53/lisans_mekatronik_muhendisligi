@@ -25,6 +25,7 @@ Bilgisayar Destekli Tasarım
 ELEKTRONİK
 Devre Teorisi
 Elektronik I-II
+Endüstriyel Elektronik
 Sayısal Elektronik
 Sayısal Elektronik Sistem Tasarımı
 Algılıyıcılar ve Dönüştürücüler
@@ -32,7 +33,6 @@ Mikrodenetleyiciler ve Programlanması
 Mikradenetleyici Tabanlı Sistem Tasarımı
 Elektrik Makinaları
 Endüstriyel Otomasyon
-Endüstriyel Elektronik
 Otomatik Kontrol I-II
 Sistem Dinamiği ve Kontrolü
 
