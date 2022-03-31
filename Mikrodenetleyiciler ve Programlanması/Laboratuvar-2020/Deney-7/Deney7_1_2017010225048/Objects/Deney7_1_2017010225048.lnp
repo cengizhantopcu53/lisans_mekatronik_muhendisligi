@@ -1,0 +1,3 @@
+".\Objects\int_ex.obj" 
+TO ".\Objects\Deney7_1_2017010225048" 
+PRINT(".\Listings\Deney7_1_2017010225048.m51") RAMSIZE(256) 

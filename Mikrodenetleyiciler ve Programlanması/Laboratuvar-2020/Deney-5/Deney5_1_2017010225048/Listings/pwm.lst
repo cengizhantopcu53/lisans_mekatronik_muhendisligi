@@ -1,0 +1,74 @@
+A51 MACRO ASSEMBLER  PWM                                                                  12/23/2020 23:15:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\pwm.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE pwm.a51 SET(SMALL) DEBUG PRINT(.\Listings\pwm.lst) OBJECT(.\Objects\pwm
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu
+                       2     ; Gun              : 23 Aralik 2020                    
+                       3     ; Dosya ismi       : pwm.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : P2.7 pin cikisindan 1 KHz ve %50 doluluk oraniyla pwm uretilmesi
+                       6     
+                       7     $mod51                                 ; 8051 ON TANIMLAMASI YAPILDI
+                       8             
+  00D7                 9     PLLCON  DATA    0D7H                  ; PLL CONTROL REGISTER ADRESI
+                      10     
+  00AE                11     PWMCON  DATA    0AEH                  ; PWM CONTROL REGISTER ADRESI
+  00AF                12     CFG842  DATA    0AFH                  ; ADuC842 CONFIGURATION SFR REGISTER
+  00B1                13     PWM0L   DATA    0B1H                  ; PWM DATA REGISTER
+  00B2                14     PWM0H   DATA    0B2H                  ; PWM DATA REGISTER
+  00B3                15     PWM1L   DATA    0B3H                  ; PWM DATA REGISTER
+  00B4                16     PWM1H   DATA    0B4H                  ; PWM DATA REGISTER
+                      17             
+----                  18     CSEG
+0000                  19                 ORG 0000H 
+                      20             
+0000 75D700           21                 MOV    PLLCON,#00H            ; ISLEMCI 16.777 MHz AYARLANDI 
+                      22                     
+0003 85AFE0           23                 MOV    ACC,CFG842             ; CFG842 DEGERI ACC YE YOLLANDI
+0006 C2E6             24                     CLR    ACC.6                  ; 6. BIT CLR YAPILDI
+0008 85E0AF           25                     MOV    CFG842,ACC             ; ACC DEGERI CFG842 YE YAZILDI
+                      26                     
+000B 75B402           27                 MOV    PWM1H,#02H             ; PWM SINYAL FREKANSININ 1 KHz AYARLANMASI
+000E 75B39F           28                     MOV    PWM1L,#9FH               
+                      29                     
+0011 75B201           30                 MOV    PWM0H,#01H             ; PWM SINYALININ DOLULUK ORANIN %50 AYARLANMASI
+0014                  31                     MOV    PWM0L,#F7H             
+*** _______________________________________________________^
+*** ERROR #A45 IN 31 (pwm.a51, LINE 31): UNDEFINED SYMBOL (PASS-2)
+                      32                     
+0017 75AE93           33                     MOV    PWMCON,#93H            ; PWM MODE:1 KULLANILDI
+                      34     
+001A                  35     BASLA:
+001A 80FE             36             SJMP   BASLA
+                      37                     
+                      38     END
+A51 MACRO ASSEMBLER  PWM                                                                  12/23/2020 23:15:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+BASLA. . . . . . .  C ADDR   001AH   A   
+CFG842 . . . . . .  D ADDR   00AFH   A   
+F7H. . . . . . . .    ----   -----       
+PLLCON . . . . . .  D ADDR   00D7H   A   
+PWM0H. . . . . . .  D ADDR   00B2H   A   
+PWM0L. . . . . . .  D ADDR   00B1H   A   
+PWM1H. . . . . . .  D ADDR   00B4H   A   
+PWM1L. . . . . . .  D ADDR   00B3H   A   
+PWMCON . . . . . .  D ADDR   00AEH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 1 ERROR(S)

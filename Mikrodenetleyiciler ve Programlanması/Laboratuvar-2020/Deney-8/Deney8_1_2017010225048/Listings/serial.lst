@@ -1,0 +1,180 @@
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 15:32:33 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\serial.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE serial.a51 SET(SMALL) DEBUG PRINT(.\Listings\serial.lst) OBJECT(.\Objec
+                      ts\serial.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu
+                       2     ; Gun              : 07 Ocak 2021                   
+                       3     ; Dosya ismi       : serial.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : P3.5'den 48 KHz frekansinda kare dalgayi Timer 0 mod 1 ile üretilirken
+                              ayni zamanda
+                       6                        ; gelen veri "8" ise LED'i sonduren, "4" ise LED'i yakan ve belitilenler
+                              haricinde "FF" veren program
+                       7     
+                       8     $mod51                                 ; 8051 ON TANIMLAMASI YAPILDI
+                       9              
+  00D7                10     PLLCON  DATA    0D7H                  ; PLL CONTROL REGISTER ADRESI
+  00B5                11     LED     EQU     P3.5                  ; LED P3.5 PININE BAGLI
+  009E                12     T3CON   DATA    09EH                  ; T3CON REGISTER ADRESI
+  009D                13     T3FD    DATA    09DH                  ; T3FD REGISTER ADRESI
+                      14     ;___________________________________________________________________________
+                      15                                                                     ;ANA PROGRAM
+----                  16     CSEG
+0000                  17              ORG 0000H 
+0000 020060           18                 LJMP   MAIN                   ; MAIN KOD
+0003                  19              ORG 0003H 
+0003 02007F           20                 LJMP   SERIAL                 ; SERIAL KESME KODU 
+000B                  21          ORG 000BH  
+000B 0200C4           22             LJMP   TIMER                  ; TIMER KESME KODU         
+0060                  23              ORG 0060H 
+                      24                     
+0060                  25     MAIN:
+0060 75D700           26                 MOV    PLLCON,#00H            ; ISLEMCI 16.777 MHz AYARLANDI
+0063 758901           27                 MOV    TMOD,#01               ; TIMER 0 VE MODE 1 SECILDI
+0066 758A18           28                     MOV    TL0,#018H              ; TL0'A HESAPLANAN DEGERIN YUKLENMESI
+0069 758CFF           29                     MOV    TH0,#0FFH              ; TH0'A HESAPLANAN DEGERIN YUKLENMESI     
+                      30                     
+006C 759E86           31                     MOV    T3CON,#86H             ; TIMER 3, 9600 BAUD-RATE 
+006F 759D2D           32                     MOV    T3FD,#2DH 
+0072 759850           33                     MOV    SCON,#50H              ; 8 BIT UART, REN VE TI IZINLERI
+0075 75A892           34                 MOV    IE,#92H                ; KESME KONFIGÜRASYONLARI AYARLANDI
+0078 75B801           35                     MOV    IP,#01H
+                      36                     
+007B D28C             37                     SETB   TR0                    ; TIMER 0 IN BASLATILMASI
+                      38                     
+007D 80FE             39     HERE:   SJMP   HERE                   ; BOS DA BEKLIYOR >> 3 osc_clock
+                      40     
+                      41     ;____________________________________________________________________________
+                      42                                                                      ;SUBROUTINES   
+                      43                                                                                                
+                                                                   
+007F 3098FD           44     SERIAL: JNB    RI,SERIAL              ; ALMA ISLEMININ BITTIGI KONTROL EDILIYOR >> 4 osc_cl
+                             ock
+0082 C298             45             CLR    RI                     ; ALMA BAYRAGI TEMIZLENDI >> 2 osc_clock
+0084 E599             46                     MOV    A,SBUF                 ; SBUF DEGERI A'YA YUKLENDI >> 2 osc_clock
+0086 11C6             47                     ACALL  DELAY                  ; BEKLEME ADIMI >> 3 osc_clock
+0088 F9               48                     MOV    R1,A                   ; >> 2 osc_clock
+0089 9438             49                     SUBB   A,#38H                 ; ALINAN BILGININ HANGI ARALIKTA OLDUGUNUN KO
+                             NTROL EDILMESI >> 2 osc_clock
+008B 502A             50                     JNC    ANSWER                 ; GELEN BILGI 38H'DEN BUYUKSE ANSWER'E GIT >>
+                              3 osc_clock
+008D 8000             51                     SJMP   CONTROL                ; KUCUKSE CONTROL'E GIT >> 3 osc_clock
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 15:32:33 PAGE     2
+
+                      52                     
+008F C3               53     CONTROL: CLR    C                     ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+0090 E9               54             MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR >> 2 osc_clock
+0091 9434             55                     SUBB   A,#34H                 ; GELEN VERI 34H'DEN BÜYÜKSE DEVAM ET >> 2 os
+                             c_clock
+0093 4022             56                     JC     ANSWER                 ; KUCUKSE ANSWER'E GIT >> 3 osc_clock
+0095 C3               57                     CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+0096 E9               58                     MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR >> 2 
+                             osc_clock
+                      59                                                   ; BU ADIMA GELINDIYSE GELEN VERI 34H ILE 38H 
+                             ARASINDADIR
+                      60                                   
+0097 9438             61             SUBB   A,#38H                 ; >> 2 osc_clock
+0099 5015             62             JNC    LED_OFF                ; ELDE OLUSURSA GELEN VERI 38H'DAN KÜÇÜKTÜR OLUSMASSA
+                              38H'DIR >> 3 osc_clock
+                      63                     
+009B C3               64                     CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+009C E9               65                     MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR >> 2 
+                             osc_clock
+009D 9437             66                     SUBB   A,#37H                 ; >> 2 osc_clock
+009F 5016             67                     JNC    ANSWER                 ; ELDE OLUSURSA GELEN VERI 37H'DAN KÜÇÜKTÜR O
+                             LUSMASSA 37H'DIR >> 3 osc_clock
+00A1 C3               68                     CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+00A2 E9               69                     MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR >> 2 
+                             osc_clock
+00A3 9436             70                     SUBB   A,#36H                 ; >> 2 osc_clock 
+00A5 5010             71                     JNC    ANSWER                 ; ELDE OLUSURSA GELEN VERI 36H'DAN KÜÇÜKTÜR O
+                             LUSMASSA 36H'DIR >> 3 osc_clock
+00A7 C3               72                     CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+00A8 E9               73                     MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR >> 2 
+                             osc_clock
+00A9 9435             74                     SUBB   A,#35H                 ; >> 2 osc_clock 
+00AB 4007             75                     JC     LED_ON                 ; ELDE OLUSURSA GELEN VERI 34H'DIR OLUSMASSA 
+                             35H'DIR >> 3 osc_clock 
+00AD 8008             76             SJMP   ANSWER                 ; >> 4 osc_clock
+00AF 32               77                     RETI                          ; GELINEN KESMEYE GERI DON >> 4 osc_clock
+                      78                     
+00B0 C3               79     LED_OFF:CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+00B1 D2B5             80             SETB   LED                    ; GELEN VERI 38H OLDUGU ICIN LED'I SONDUR >> 2 osc_cl
+                             ock
+00B3 32               81             RETI                          ; GELINEN KESMEYE GERI DON >> 4 osc_clock         
+                      82                     
+00B4 C2B5             83     LED_ON: CLR    LED                    ; GELEN VERI 34H OLDUGU ICIN LED'I YAK >> 2 osc_clock
+00B6 32               84             RETI                          ; GELINEN KESMEYE GERI DON >> 4 osc_clock
+                      85     
+00B7 C3               86     ANSWER: CLR    C                      ; ELDE BITI TEMIZLENIR >> 1 osc_clock
+00B8 74FF             87             MOV    A,#0FFH                ; GELEN VERI GECERSIZ ARALIKTA OLDUGU ICIN FFH DEGERI
+                              GONDER >> 3 osc_clock
+00BA F599             88                     MOV    SBUF,A                 ; GONDERILECEK VERI SBUF'A ATANIR >> 2 osc_cl
+                             ock
+00BC 11C6             89             ACALL  DELAY                  ; BEKLEME ADIMI >> 3 osc_clock
+00BE 3099FD           90             JNB    TI,$                   ; GONDERME ISLEMININ TAMAMLANMASININ KONTROL EDILMESI
+                              >> 4 osc_clock
+00C1 C299             91             CLR    TI                     ; GONDERME BAYRAGININ TEMIZLENMESI >> 2 osc_clock
+00C3 32               92             RETI                              ; GELINEN KESMEYE GERI DON >> 4 osc_clock
+                      93                     
+00C4                  94     TIMER:  
+00C4 B2B5             95             CPL    LED                    ; TOGGLE ISLEMI >> 2 osc_clock
+                      96     
+00C6 7901             97     DELAY:  MOV    R1,#1                  ; 10ms BEKLEMEYI URETECEK DEGERLERIN YUKLENMESI >> 1 
+                             osc_clock
+00C8 7ADB             98     DLY0:   MOV    R2,#0DBH               ; >> 2 osc_clock
+00CA 7BFF             99     DLY1:   MOV    R3,#0FFH               ; >> 2 osc_clock
+00CC DBFE            100             DJNZ   R3,$                   ; IC ICE DONGULERIN OLUSTURULMASI >> 3 osc_clock
+00CE D9FA            101                     DJNZ   R1,DLY1                ; >> 3 osc_clock
+00D0 DAF6            102                     DJNZ   R2,DLY0                ; >> 3 osc_clock
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 15:32:33 PAGE     3
+
+00D2 32              103                     RETI                          ; >> 4 osc_clock
+                     104     ;___________________________________________________________________________________    
+                     105     END 
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 15:32:33 PAGE     4
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ANSWER . . . . . .  C ADDR   00B7H   A   
+CONTROL. . . . . .  C ADDR   008FH   A   
+DELAY. . . . . . .  C ADDR   00C6H   A   
+DLY0 . . . . . . .  C ADDR   00C8H   A   
+DLY1 . . . . . . .  C ADDR   00CAH   A   
+HERE . . . . . . .  C ADDR   007DH   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+IP . . . . . . . .  D ADDR   00B8H   A   
+LED. . . . . . . .  B ADDR   00B0H.5 A   
+LED_OFF. . . . . .  C ADDR   00B0H   A   
+LED_ON . . . . . .  C ADDR   00B4H   A   
+MAIN . . . . . . .  C ADDR   0060H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PLLCON . . . . . .  D ADDR   00D7H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SERIAL . . . . . .  C ADDR   007FH   A   
+T3CON. . . . . . .  D ADDR   009EH   A   
+T3FD . . . . . . .  D ADDR   009DH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TIMER. . . . . . .  C ADDR   00C4H   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

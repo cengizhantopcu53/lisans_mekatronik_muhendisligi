@@ -1,0 +1,126 @@
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 01:31:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\serial.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE serial.a51 SET(SMALL) DEBUG PRINT(.\Listings\serial.lst) OBJECT(.\Objec
+                      ts\serial.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu
+                       2     ; Gun              : 07 Ocak 2021                   
+                       3     ; Dosya ismi       : serial.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : Gelen veri "0" ise LED'i sonduren, "1" ise LED'i yakan ve belitilenler
+                              haricinde "FF" veren program
+                       6     
+                       7     $mod51                                 ; 8051 ON TANIMLAMASI YAPILDI
+                       8              
+  00D7                 9     PLLCON  DATA    0D7H                  ; PLL CONTROL REGISTER ADRESI
+  00B4                10     LED     EQU     P3.4                  ; LED P3.4 PININE BAGLI
+  009E                11     T3CON   DATA    09EH                  ; T3CON REGISTER ADRESI
+  009D                12     T3FD    DATA    09DH                  ; T3FD REGISTER ADRESI
+                      13     ;___________________________________________________________________________
+                      14                                                                     ;ANA PROGRAM
+----                  15     CSEG
+0000                  16              ORG 0000H 
+0000 020060           17                 LJMP   MAIN                   ; MAIN KOD
+0003                  18              ORG 0003H 
+0003 020071           19                 LJMP   SERIAL                 ; KESME KODU        
+0060                  20              ORG 0060H 
+                      21                     
+0060                  22     MAIN:
+0060 75D700           23                 MOV    PLLCON,#00H            ; ISLEMCI 16.777 MHz AYARLANDI
+0063 759E86           24                     MOV    T3CON,#86H             ; TIMER 3, 9600 BAUD-RATE 
+0066 759D2D           25                     MOV    T3FD,#2DH 
+0069 759850           26                     MOV    SCON,#50H              ; 8 BIT UART, REN VE TI IZINLERI
+006C 75A890           27                 MOV    IE,#90H                ; KESME KONFIGÜRASYONLARI AYARLANDI
+                      28                     
+006F 80FE             29     HERE:   SJMP   HERE                   ; BOS DA BEKLIYOR
+                      30     
+                      31     ;____________________________________________________________________________
+                      32                                                                      ;SUBROUTINES   
+                      33                                                                                                
+                                                                   
+0071 3098FD           34     SERIAL: JNB    RI,SERIAL              ; ALMA ISLEMININ BITTIGI KONTROL EDILIYOR
+0074 C298             35             CLR    RI                     ; ALMA BAYRAGI TEMIZLENDI
+0076 E599             36                     MOV    A,SBUF                 ; SBUF DEGERI A'YA YUKLENDI
+0078 11A1             37                     ACALL  DELAY                  ; BEKLEME ADIMI
+007A F9               38                     MOV    R1,A                   ; 
+007B 9430             39                     SUBB   A,#30H                 ; ALINAN BILGININ HANGI ARALIKTA OLDUGUNUN KO
+                             NTROL EDILMESI
+007D 5002             40                     JNC    CONTROL                ; GELEN BILGI 30H'DEN BUYUKSE CONTROL'E GIT
+007F 8013             41                     SJMP   ANSWER                 ; KUCUKSE ANSWER'E GIT
+                      42                     
+0081 C3               43     CONTROL: CLR    C                      ; ELDE BITI TEMIZLENIR
+0082 E9               44             MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR
+0083 9432             45                     SUBB   A,#32H                 ; GELEN VERI 32H'DEN KUCUKSE DEVAM ET
+0085 500D             46                     JNC    ANSWER                 ; BUYUKSE ANSWER'E GIT
+0087 C3               47                     CLR    C                      ; ELDE BITI TEMIZLENIR
+0088 E9               48                     MOV    A,R1                   ; A'YA GELEN VERI R1 UZERINDEN YUKLENIR
+                      49                                                   ; BU ADIMA GELINDIYSE GELEN VERI 30H VEYA 31H
+                             'DIR
+0089 9431             50                 SUBB   A,#31H
+008B 5004             51                     JNC    LED_ON                 ; ELDE OLUSURSA GELEN VERI 30H'DIR OLUSMASSA 
+                             31H'DIR.
+008D C3               52                     CLR    C                      ; ELDE BITI TEMIZLENIR
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 01:31:03 PAGE     2
+
+008E D2B4             53             SETB   LED                    ; GELEN VERI 30H OLDUGU ICIN LED'I SONDUR
+0090 32               54                     RETI                          ; GELINEN KESMEYE GERI DON
+                      55                     
+0091 C2B4             56     LED_ON: CLR    LED                    ; GELEN VERI 31H OLDUGU ICIN LED'I YAK
+0093 32               57             RETI                          ; GELINEN KESMEYE GERI DON
+                      58     
+0094 C3               59     ANSWER: CLR    C                      ; ELDE BITI TEMIZLENIR
+0095 74FF             60             MOV    A,#0FFH                ; GELEN VERI GECERSIZ ARALIKTA OLDUGU ICIN FFH DEGERI
+                              GONDER
+0097 F599             61                     MOV    SBUF,A                 ; GONDERILECEK VERI SBUF'A ATANIR
+0099 11A1             62             ACALL  DELAY                  ; BEKLEME ADIMI 
+009B 3099FD           63             JNB    TI,$                   ; GONDERME ISLEMININ TAMAMLANMASININ KONTROL EDILMESI
+009E C299             64             CLR    TI                     ; GONDERME BAYRAGININ TEMIZLENMESI
+00A0 32               65             RETI                              ; GELINEN KESMEYE GERI DON
+                      66     
+00A1 7901             67     DELAY:  MOV    R1,#1                  ; 10ms BEKLEMEYI URETECEK DEGERLERIN YUKLENMESI
+00A3 7ADB             68     DLY0:   MOV    R2,#0DBH
+00A5 7BFF             69     DLY1:   MOV    R3,#0FFH
+00A7 DBFE             70             DJNZ   R3,$                   ; IC ICE DONGULERIN OLUSTURULMASI
+00A9 D9FA             71                     DJNZ   R1,DLY1
+00AB DAF6             72                     DJNZ   R2,DLY0
+00AD 32               73                     RETI
+                      74     ;___________________________________________________________________________________    
+                      75     END 
+A51 MACRO ASSEMBLER  SERIAL                                                               01/07/2021 01:31:03 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ANSWER . . . . . .  C ADDR   0094H   A   
+CONTROL. . . . . .  C ADDR   0081H   A   
+DELAY. . . . . . .  C ADDR   00A1H   A   
+DLY0 . . . . . . .  C ADDR   00A3H   A   
+DLY1 . . . . . . .  C ADDR   00A5H   A   
+HERE . . . . . . .  C ADDR   006FH   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+LED. . . . . . . .  B ADDR   00B0H.4 A   
+LED_ON . . . . . .  C ADDR   0091H   A   
+MAIN . . . . . . .  C ADDR   0060H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PLLCON . . . . . .  D ADDR   00D7H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SERIAL . . . . . .  C ADDR   0071H   A   
+T3CON. . . . . . .  D ADDR   009EH   A   
+T3FD . . . . . . .  D ADDR   009DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

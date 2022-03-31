@@ -1,0 +1,72 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    12/27/2020  19:00:07  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\uart.obj TO .\Objects\Deney6_1_2017010225048 PRINT (.\Listings\Deney6_1_2017010225
+>> 048.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\uart.obj (UART)
+
+
+LINK MAP OF MODULE:  .\Objects\Deney6_1_2017010225048 (UART)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     002DH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Deney6_1_2017010225048 (UART)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        UART
+  C:0020H         SYMBOL        DELAY
+  C:0010H         SYMBOL        DEVAM
+  C:0022H         SYMBOL        DLY0
+  C:0024H         SYMBOL        DLY1
+  C:000CH         SYMBOL        MAIN
+  D:00D7H         SYMBOL        PLLCON
+  D:0099H         SYMBOL        SBUF
+  D:0098H         SYMBOL        SCON
+  C:0016H         SYMBOL        SEND
+  D:00AFH         SYMBOL        T3CON
+  D:00B1H         SYMBOL        T3FD
+  B:0098H.1       SYMBOL        TI
+  C:0000H         LINE#         16
+  C:0003H         LINE#         17
+  C:0006H         LINE#         18
+  C:0009H         LINE#         19
+  C:000CH         LINE#         22
+  C:000EH         LINE#         23
+  C:0010H         LINE#         25
+  C:0011H         LINE#         26
+  C:0013H         LINE#         27
+  C:0016H         LINE#         31
+  C:0019H         LINE#         32
+  C:001BH         LINE#         33
+  C:001DH         LINE#         34
+  C:001FH         LINE#         35
+  C:0020H         LINE#         39
+  C:0022H         LINE#         40
+  C:0024H         LINE#         41
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/27/2020  19:00:07  PAGE 2
+
+
+  C:0026H         LINE#         42
+  C:0028H         LINE#         43
+  C:002AH         LINE#         44
+  C:002CH         LINE#         45
+  -------         ENDMOD        UART
+
+Program Size: data=8.0 xdata=0 code=45
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

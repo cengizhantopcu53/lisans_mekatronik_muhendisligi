@@ -1,0 +1,84 @@
+A51 MACRO ASSEMBLER  INT_EX                                                               01/06/2021 21:44:59 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+NO OBJECT MODULE REQUESTED
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE int_ex.a51 SET(SMALL) DEBUG PRINT(.\Listings\int_ex.lst) OBJECT(.\Objec
+                      ts\int_ex.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu
+                       2     ; Gun              : 06 Ocak 2021                   
+                       3     ; Dosya ismi       : int_ex.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : P3.2 pininde olusan harici kesme INT0 ile LED'i 1 saniye yakan program
+                              kodu
+                       6     
+                       7     $mod51                                 ; 8051 ON TANIMLAMASI YAPILDI
+                       8             
+  00B4                 9     LED     EQU     P3.4                  ; LED P3.4 PININE BAGLI 
+  00D7                10     PLLCON  DATA    0D7H                  ; PLL CONTROL REGISTER ADRESI
+                      11     ;___________________________________________________________________________
+                      12                                                                     ;ANA PROGRAM
+----                  13     CSEG
+0000                  14              ORG 0000H 
+0000 020060           15                 LJMP   MAIN                   ; MAIN KOD
+0003                  16              ORG 0003H 
+0003 02006C           17                 LJMP   ISR_ITO                ; KESME KODU        
+0060                  18              ORG 0060H 
+                      19                     
+0060                  20     MAIN:
+0060 75D700           21                 MOV    PLLCON,#00H            ; ISLEMCI 16.777 MHz AYARLANDI
+0063 75A881           22                 MOV    IE,#81H                ; KESME KONFIGÜRASYONLARI AYARLANDI
+0066                  23                     SETB   ITO                    ; KESME PINI AKTIF EDILDI
+*** ________________________________________________^
+*** ERROR #A45 IN 23 (int_ex.a51, LINE 23): UNDEFINED SYMBOL (PASS-2)
+0068 7464             24                 MOV    A,#100                 
+                      25                     
+006A 80FE             26     HERE:   SJMP   HERE                   ; BOS DA BEKLIYOR
+                      27     
+                      28     ;____________________________________________________________________________
+                      29                                                                      ;SUBROUTINES   
+                      30                                                                                                                                      
+006C                  31     ISR_ITO:
+006C C2B4             32             CLR    LED 
+                      33     
+006E F9               34                     MOV    R1,#A                  ; 1s BEKLEMEYI URETECEK DEGERLERIN YUKLENMESI
+*** ____________________________________________________^
+*** ERROR #A9 IN 34 (int_ex.a51, LINE 34): SYNTAX ERROR
+006F 7ADB             35     DLY0:   MOV    R2,#0DBH
+0071 7BFF             36     DLY1:   MOV    R3,#0FFH
+0073 DBFE             37             DJNZ   R3,$                   ; IC ICE DONGULERIN OLUSTURULMASI
+0075 D9FA             38                     DJNZ   R1,DLY1
+0077 DAF6             39                     DJNZ   R2,DLY0
+                      40                     
+0079 D2B4             41                     SETB   LED
+                      42                     
+007B 32               43                     RETI
+                      44     ;___________________________________________________________________________________    
+                      45     END 
+A51 MACRO ASSEMBLER  INT_EX                                                               01/06/2021 21:44:59 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DLY0 . . . . . . .  C ADDR   006FH   A   
+DLY1 . . . . . . .  C ADDR   0071H   A   
+HERE . . . . . . .  C ADDR   006AH   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+ISR_ITO. . . . . .  C ADDR   006CH   A   
+ITO. . . . . . . .    ----   -----       
+LED. . . . . . . .  B ADDR   00B0H.4 A   
+MAIN . . . . . . .  C ADDR   0060H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PLLCON . . . . . .  D ADDR   00D7H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 2 ERROR(S)
