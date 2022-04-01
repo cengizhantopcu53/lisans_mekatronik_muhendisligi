@@ -1,0 +1,73 @@
+[System]
+Name='Klima'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=27
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='istenenSicaklik'
+Range=[15 25]
+NumMFs=3
+MF1='Soguk':'trapmf',[15 15 17 20]
+MF2='Ilik':'gbellmf',[1 1.5 20]
+MF3='Sicak':'sigmf',[2 22.5]
+
+[Input2]
+Name='ortamSicakligi'
+Range=[-15 25]
+NumMFs=3
+MF1='Soguk':'zmf',[-15 5]
+MF2='Ilik':'gbellmf',[7 2 5]
+MF3='Sicak':'smf',[5 25]
+
+[Input3]
+Name='odaHacmi'
+Range=[20 100]
+NumMFs=3
+MF1='Dar':'trapmf',[20 20 30 60]
+MF2='Normal':'trimf',[30 60 90]
+MF3='Genis':'trapmf',[60 90 100 100]
+
+[Output1]
+Name='calismaSuresi'
+Range=[10 60]
+NumMFs=3
+MF1='Kisa':'trapmf',[10 10 15 35]
+MF2='Orta':'trimf',[15 35 55]
+MF3='Uzun':'trapmf',[35 55 60 60]
+
+[Rules]
+3 1 3, 3 (1) : 1
+3 1 2, 3 (1) : 1
+3 1 1, 2 (1) : 1
+3 2 3, 3 (1) : 1
+3 2 2, 2 (1) : 1
+3 2 1, 2 (1) : 1
+3 3 3, 1 (1) : 1
+3 3 2, 1 (1) : 1
+3 3 1, 1 (1) : 1
+2 1 3, 3 (1) : 1
+2 1 2, 2 (1) : 1
+2 1 1, 2 (1) : 1
+2 2 3, 2 (1) : 1
+2 2 2, 1 (1) : 1
+2 2 1, 1 (1) : 1
+2 3 3, 2 (1) : 1
+2 3 2, 2 (1) : 1
+2 3 1, 1 (1) : 1
+1 1 3, 2 (1) : 1
+1 1 2, 2 (1) : 1
+1 1 1, 1 (1) : 1
+1 2 3, 2 (1) : 1
+1 2 2, 2 (1) : 1
+1 2 1, 1 (1) : 1
+1 3 3, 3 (1) : 1
+1 3 2, 3 (1) : 1
+1 3 1, 2 (1) : 1
