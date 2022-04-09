@@ -21,6 +21,8 @@ Mukavemet
 Akışkanlar Mekaniği
 Makine Elemanları
 Bilgisayar Destekli Tasarım
+Robot Teorisi
+Robot Tasarımı ve Kontrolü
 
 ELEKTRONİK
 Devre Teorisi
@@ -46,8 +48,6 @@ Görüntü İşleme
 Veri Haberleşme Sistemleri
 İşaret ve Sistemler
 Sayısal Sinyal İşleme
-Robot Teorisi
-Robot Tasarımı ve Kontrolü
 
 GENEL EĞİTİM
 Atatürk İlkeleri ve İnkilap Tarihi I-II
