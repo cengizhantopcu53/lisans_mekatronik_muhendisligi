@@ -1,0 +1,43 @@
+İÇERİK 
+0.Kesir Tesirleri (İç Kuvvetler ve Momentler)
+0.1 Yapısal Elemanlarda Meydana Gelen İç Kuvvetler
+0.2 Kesme Kuvveti ve Moment Diyagramları
+0.3 Kesme ve Moment Diyagramların Oluşturulması için Grafiksel Yöntem (Alan Yöntemi)
+1.Gerilme
+1.2 Deforme Olabilen Bir Cismin Dengesi
+1.3 Gerilme
+1.4 Eksenel Olarak Yüklenmiş Bir Çubukta Ortalama Normal Gerilme 
+1.5 Ortalama Kayma Gerilmesi
+1.6 Müsaade Edilebilir Gerilme
+1.7 Basit Bağlantılarınn Tasarımı
+2.Şekil Değiştirme
+2.1 Deformasyon
+2.2 Gerinim
+3.Malzemenin Mekanik Özellikleri
+3.1 Çekme ve Basma Testi
+3.2 Gerilme – Şekil Değiştirme Diyagramları
+3.3 Sünek ve Gevrek Malzemeler
+3.4 Hooke Yasası    
+3.6 Poisson Oranı        
+4.Eksenel Yükleme
+4.1 Saint-Venant Prensibi
+4.2 Eksenel Yüklü Elemanlarda Elastik Deformasyon
+4.3 Süperpozisyon Prensibi
+4.4 Statikçe Belirsiz Eksenel Yüklü Elemanlar
+4.5 Eksenel Yüklü Elemanlar için Kuvvet Yönteminin Kullanılması
+4.6 Termal Gerilme
+6.Eğilme
+6.3 Düz Elemanların Eğilme Deformasyonu
+6.4 Eğilme Formülü
+5.Burulma
+5.1 Dairesel Kesitli Şaftların Burulma Deformasyonu
+5.2 Burulma Formülü            
+5.3 Güç Aktarımı
+5.4 Burulma Açısı
+5.5 Statikçe Belirsiz Tork Yüklü Elemanlar
+7.Enine Kesme (Kayma Gerilmesi)
+7.1 Doğrusal Elemanlarda Kesme
+7.2 Kayma Formülü
+7.3 Birkaç Elemanın Birleşiminde Kesme Akısı
+8.Birleşik Yükleme
+8.2 Birleşik Yüklemede Gerilmeye Sebep Olan Durumlar
