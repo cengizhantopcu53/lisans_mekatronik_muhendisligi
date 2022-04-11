@@ -1,0 +1,30 @@
+KAYNAKÇA 
+1. https://www.seckin.com.tr/kitap/n/344782458/title/muhendislikte-diferansiyel-denklemler-ziyaddin-recebli.html
+2. http://www.bumatematikozelders.com/altsayfa/diferansiyel_denklemler_matematik_ders_videolari.html
+
+İÇERİK 
+2.Birinci Mertebeden Diferansiyel Denklemler
+2.1 Değişkenlere Ayrılabilen Diferansiyel Denklemler
+2.2 Homojen Diferansiyel Denklemler
+2.3 Homojen Hale Getirilibilen Diferansiyel Denklemi
+2.4 Birinci Mertebeden Lineer Diferansiyel Denklemler
+2.5 Bernoulli Diferansiyel Denklemi
+2.6 Tam Diferansiyel Denklemler
+3.İkinci Mertebeden Diferansiyel Denklemler
+3.1 d2y/dx2=f(x)
+3.2 d2y/dx2=f(x,dy/dx)
+3.5 İkinci Mertebeden Sabit Katsayılı Lineer Diferansiyel Denklemler 
+3.5.1 İkinci Mertebeden İkinci Tarafsız (Homojen) Sabit Katsayılı Lineer Diferansiyel Denklemler
+3.5.2 İkinci Mertebeden İkinci Taraflı (Homojen Olmayan) Sabit Katsayılı Lineer Diferansiyel Denklemler
+3.5.2.1 1.Yöntem
+ 3.5.2.2 2.Yöntem: Sabitin Değişimi Kuralı (Lagrange Yöntemi)
+5.Değişken Katsayılı Diferansiyel Denklemler
+5.1 Euler Diferansiyel Denklemi
+6.Diferansiyel Denklem Sistemleri
+6.1 Normal Diferansiyel Denklem Sistemleri
+6.2 Sabit Katsayılı Lineer Diferansiyel Denklem Sistemleri
+4. n. Mertebeden Sabit Katsayılı Lineer Diferansiyel Denklemler
+4.1 İkinci Mertebeden İkinci Tarafsız (Homojen) Sabit Katsayılı Lineer Diferansiyel Denklemler
+4.2 İkinci Mertebeden İkinci Taraflı (Homojen Olmayan) Sabit Katsayılı Lineer Diferansiyel Denklemler
+4.2.1 1.Yöntem
+4.2.2 2.Yöntem: Sabitin Değişimi Kuralı (Lagrange Yöntemi)
