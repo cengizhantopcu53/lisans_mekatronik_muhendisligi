@@ -1,0 +1,11 @@
+KAYNAKÇA
+1. httpsahmetasimsengul.wordpress.comcategoryc
+2. httpswww.bulentsiyah.comgenetik-algoritma-kullanilarak-noktadan-noktaya-yol-ve-rota-planlama-csharp
+3. httpsslideplayer.biz.trslide11879386
+
+İÇERİK 
+1.Giriş
+2.Genetik Algoritma
+3.Karınca Koloni Sistemi
+4.Yapay Arı Koloni 
+5.Çok Amaçlı Optimizasyon
