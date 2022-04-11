@@ -1,0 +1,32 @@
+KAYNAKÇA 
+1. Elektrik Makinaların Temelleri Stephan J. Chapman
+2. https://ekblc.wordpress.com/notlar/bahar-yariyili/elektrik-makineleri/
+
+İÇERİK
+1.Makina İlkelerine Giriş
+1.1 Dairesel Hareketler
+1.2 Manyetik Alan
+1.3 Manyetik Devreler
+1.4 Ferromanyetik Malzemelerin Manyetik Davranışları
+1.5 Zamanla Değişen Manyetik Alanın Endüklediği Gerilim, Faraday Kanunu
+1.6 Bir İletkende Endükleme Kuvvetinin Üretilmesi
+1.7 Ferromanyetik Nüvedeki Enerji Kayıpları 
+2.Transformatörler
+2.1 Transformatörlere Giriş
+2.2 Tek Fazlı Transformatörler
+2.2.1 İdeal Transformatörler
+2.2.2 Gerçek Transformatörler
+2.2.3 Transformatör Eşdeğer Devresi                  
+2.2.4 Transformatörün Gerilim Regülasyonu ve Verim
+3.Asenkron Makineler  
+3.1 Giriş
+3.2 Asenkron Makinenin Yapısı
+3.3 Döner Manyetik Alan
+3.4 Çalışma Prensibi
+3.5 Asenkron Makine Eşdeğer Devresi
+3.6 Asenkron Makinede Güç ve Güç Kayıpları
+3.7 Asenkron Makinanın Hat ve Faz Değerleri Arasındaki İlişki
+3.8 Asenkron Motorda İndüklenen Moment
+3.9 Asenkron Motorun Moment-Hız Karakteristiği
+3.10 Maksimum Güç Teoremi
+3.11 Yıldız-Üçgen Bağlantıları
