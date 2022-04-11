@@ -1,0 +1,22 @@
+KAYNAKÇA 
+1. https://web.karabuk.edu.tr/cihanmizrak/mekanizma.html
+2. http://www1.gantep.edu.tr/~kapucu/tm304/tm304.html
+
+İÇERİK
+Makine Teorisi I Mekanizmalar
+1. Mekanizma Sistematiği
+2. Mekanizmaların Kinematiği
+2.1 Kısıt Denklemlerin Yazılması
+2.2 Kinematik Çözümleme
+2.2.1 Analitik Yol
+2.2.2 Sayısal Yol
+Makine Teorisi II Makina Dinamiği
+1. Temel Kavram ve İlkeler
+1.1 Kuvvetler
+1.2 Rijid Cisimlerde Kütle ve Kütle Dağılımı
+1.3 Analitik Mekaniğin Esasları
+1.3.1 Hareket Denklemi Oluşturma Yöntemleri
+2. Tek Serbestlik Dereceli Düzlemsel Makinaların Statik Dengesi
+2.1 Virtüel İşler İlkesinin Makinalara Uygulanması
+3.Rijit Rotorlarda Kütle Dengelemesi
+3.1 Rotorların Dengelenmesi
