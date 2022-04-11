@@ -1,0 +1,14 @@
+KAYNAKÇA 
+1. http://www.ibrahimcayiroglu.com/
+
+İÇERİK
+1.Temel Kavramlar ve Sürekli Mukavemet Hesapları
+2.Miller ve Akslar
+3.Kamalar
+4.Pres Geçmeler
+4.1 Düz Pres Geçme
+4.2 Konik Pres Geçme
+4.3 Sıkma Pres Geçme
+5.Vidalar
+5.1 Genel Bilgiler
+5.2 Vida Hesapları
