@@ -1,0 +1,14 @@
+KAYNAKÇA 
+1. https://mozanunal.com/2015/11/8051-entegresi-ile-assembly/#MOV-Komutu
+2. https://www.youtube.com/watch?v=xSqIlKJOs6A&t=5s
+3. http://tec.ege.edu.tr/mek_dersler.html
+
+İÇERİK
+1.Adc
+2.Dac
+3.Sensör Kullanımları
+3.1 Servo Motor
+3.2 DC Motor
+3.3 Step Motor
+3.4 Lcd
+3.5 Keypad
