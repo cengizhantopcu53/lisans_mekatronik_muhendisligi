@@ -1,0 +1,22 @@
+KAYNAKÇA
+1. CNC Programlama ve Endüstriyel Uygulamalar-Ahmet Can
+
+İÇERİK 
+1.Giriş
+1.1 CNC Tornalarda Kullanılan G/M Kodları
+1.2 CNC Tornalarda Kesme Hızı
+1.3 CNC Tornalarda Koordinat Sistemleri
+6.Alın Tornalama
+7.Boyuna Tornalama
+8.Dikine Tornalama
+9.Puntalama - Delik Delme
+10.Konik Tornalama ve Pah Kırma
+11.CNC Tornalarda Dairesel Hareket
+13.Çevrimler
+13.1 Bitirme Talaşı Çevrimi-G70
+13.2 Boyuna Kaba Tornalama Çevrimi-G71
+13.5 Delik ve Alın Yüzeyine Kanal Açma Çevrimi-G74
+13.6 Çap Yüzeyine Kanal Açma Çevrimi-G75
+14.Sabit Döngüler
+14.3 Tek Pasolu Diş Açma Çevrimi-G92
+15.CNC Torna Endüstriyel Uygulama Örnekleri
