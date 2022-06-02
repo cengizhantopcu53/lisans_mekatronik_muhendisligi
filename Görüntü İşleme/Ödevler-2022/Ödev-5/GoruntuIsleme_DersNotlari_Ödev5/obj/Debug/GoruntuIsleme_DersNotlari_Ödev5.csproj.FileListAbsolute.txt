@@ -1,0 +1,10 @@
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\bin\Debug\GoruntuIsleme_DersNotlari_Ödev5.exe.config
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\bin\Debug\GoruntuIsleme_DersNotlari_Ödev5.exe
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\bin\Debug\GoruntuIsleme_DersNotlari_Ödev5.pdb
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.csproj.AssemblyReference.cache
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.Properties.Resources.resources
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.csproj.GenerateResource.cache
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.csproj.CoreCompileInputs.cache
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.exe
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.pdb
+C:\Users\cengi\source\repos\GoruntuIsleme_DersNotlari_Ödev5\obj\Debug\GoruntuIsleme_DersNotlari_Ödev5.Form1.resources
