@@ -1,0 +1,54 @@
+KAYNAKÇA 
+	1. Güç Elektroniği-M.Necdet Yıldız
+
+1.Giriş
+1.1 Temel Güç Devreleri
+1.2 Temel Güç Elemanları
+2.AC/DC Dönüştürücüler (Doğrultucular)
+2.1 Diyotlar
+2.2 Kontrolsüz Doğrultucular
+2.2.1 Tek Fazlı Yarım Dalga Doğrultucu
+2.2.2 Tek Fazlı Orta Uçlu Transformatör Tam Dalga Doğrultucu
+2.2.3 Tek Fazlı Köprü Tipi Tam Dalga Doğrultucu
+2.3 Tristörler
+2.3.1 Tristörün Kontrol Dışı İletime Geçmesi
+2.3.1.1 Yüksek Voltajla İletim
+2.3.1.2 Hızlı Gerilim Değişmesi
+2.3.1.3 Hızlı Akım Değişmesi
+2.3.2 Tristörün Yalıtıma Geçirilmesi
+2.3.2.1 Seri Anahtar Kullanarak
+2.3.2.2 Paralel Anahtar Kullanarak
+2.3.2.3 Seri Ayarlı Direnç Kullanarak
+2.3.2.4 Ayarlı Kaynak Kullanarak
+2.3.2.5 Ters Gerilim Kullanarak
+2.3.3 Tristörlerin Korunması
+2.3.3.1 Tristörlerde dv/dt Korumasının Sağlanması
+2.3.3.2 Tristörlerde di/dt Korumasının Sağlanması
+2.3.4 Tristör Tetikleme Devreleri
+2.3.4.1 Ayrı Bir DC Üreteçten Tetikleme
+2.3.4.2 Ana Besleme Kaynağından Tetikleme
+2.3.4.3 Optakuplör İle Tristör Tetikleme
+2.4 Kontrollü Doğrultucular
+2.4.1 Tek Fazlı Kontrollü Yarım Dalga Doğrultucu                  
+2.4.2 Tek Fazlı Kontrollü Tam Dalga Doğrultucu
+2.4.3 Üç Fazlı Kontrollü Yarım Dalga Doğrultucu
+2.4.4 Üç Fazlı Kontrollü Tam Dalga Doğrultucu
+3.AC/AC Dönüştürücüler (Kıyıcılar)
+3.1 Triyaklar
+3.2 AC Voltaj Kontrolcüler
+3.2.1 Tek Fazlı Faz Açısı Kontrollü AC Voltaj Kontrollü                  
+3.2.2 Üç Fazlı Faz Açısı Kontrollü AC Voltaj Kontrollü
+4.DC/AC Dönüştürücüler (İnverterler)
+4.1 Tam Köprü İnverter
+4.2 Kare Dalga İnverter
+4.3 Fourier Serisi Analizi
+4.5 Toplam Harmonik Bozulma
+4.6 Darbe Genişlik Modülasyonu 
+4.7 PWM Tanımlamaları ve Hususlar
+4.8 PWM Harmonikleri
+5.DC/DC Dönüştürücüler 
+5.1 Lineer Gerilim Regülatörü 
+5.2 Temel Anahtarlamalı Dönüştürücüler
+5.3 Buck Converter
+5.4 Tasarım Hususları 
+5.5 Boost Converter
