@@ -21,6 +21,8 @@ Mukavemet
 Akışkanlar Mekaniği
 Makine Elemanları
 Bilgisayar Destekli Tasarım
+Otomatik Kontrol I-II
+Sistem Dinamiği ve Kontrolü
 Robot Teorisi
 Robot Tasarımı ve Kontrolü
 
@@ -35,8 +37,6 @@ Mikrodenetleyiciler ve Programlanması
 Mikradenetleyici Tabanlı Sistem Tasarımı
 Elektrik Makinaları
 Endüstriyel Otomasyon
-Otomatik Kontrol I-II
-Sistem Dinamiği ve Kontrolü
 
 YAZILIM
 Bilgisayar Programlama I-II
