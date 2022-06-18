@@ -1,0 +1,48 @@
+[System]
+Name='camasir'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='CM'
+Range=[0 10]
+NumMFs=3
+MF1='Hafif':'trapmf',[0 0 1 5]
+MF2='Orta':'trimf',[2 5 8]
+MF3='Agır':'trimf',[5 10 11]
+
+[Input2]
+Name='CS'
+Range=[0 100]
+NumMFs=3
+MF1='Yumusak':'trimf',[0 25 50]
+MF2='Normal':'trimf',[20 50 80]
+MF3='Sert':'trimf',[50 100 110]
+
+[Output1]
+Name='DS'
+Range=[600 1500]
+NumMFs=4
+MF1='Dusuk':'trimf',[600 800 1000]
+MF2='Orta':'trimf',[800 1000 1200]
+MF3='Yuksek':'trimf',[1000 1200 1400]
+MF4='CokYuksek':'trimf',[1200 1400 1500]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 2 (1) : 1
+2 1, 2 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 4 (1) : 1
