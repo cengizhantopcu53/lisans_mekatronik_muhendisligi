@@ -1,0 +1,33 @@
+[System]
+Name='SugenoOrnek1'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=3
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='x'
+Range=[0 16]
+NumMFs=3
+MF1='kucuk':'trimf',[1 3.5 6]
+MF2='orta':'trimf',[5 9 13]
+MF3='buyuk':'trimf',[10 13 16]
+
+[Output1]
+Name='y'
+Range=[0 1]
+NumMFs=3
+MF1='f1(x)':'linear',[-1.83 10.63]
+MF2='f2(x)':'linear',[0.19 1.32]
+MF3='f3(x)':'linear',[1.27 -11.07]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
