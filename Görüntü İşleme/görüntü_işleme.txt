@@ -9,4 +9,4 @@
 7.Operatörler
 7.1 Aritmatik Operatörler
 7.2 Mantıksal Operatörler
-9.Yapay Sinir Ağları
+8.Yapay Sinir Ağları
