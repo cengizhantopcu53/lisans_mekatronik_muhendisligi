@@ -1,15 +1,16 @@
 KAYNAKÇA 
-	1. Otomatik Kontrol Sistemleri-Benjamin C.Kuocev
-	2. Modern Kontrol Mühendisliği - Katsuhiko Ogata
-	3. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri/361459.html
-	4. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri--cozumlu-problemler/277751.html
-	5. https://tf.selcuk.edu.tr/index.php?lang=tr&birim=033003&page=1412
-	6. https://drive.google.com/file/d/1ZLtYjMn9w0YWgmeDYmQqLgbiB6Rvqtqy/view?ts=6284e506
-	7. https://www.youtube.com/playlist?list=PLdcoZed79Zud8kBBBR6kXX7MZ4im5Eabh
-	8. https://www.youtube.com/playlist?list=PLyIEwiklim9jb-TWDIblK4IqwLUuGValL
-	9. https://www.youtube.com/playlist?list=PLMtASTThs8R2locHuQVG16Zt6OF9QOcgK
-	10. https://www.youtube.com/playlist?list=PL6nCCC-hmdoFejiE8n5c49RtKL8J2stu1
+1. Otomatik Kontrol Sistemleri-Benjamin C.Kuocev
+2. Modern Kontrol Mühendisliği - Katsuhiko Ogata
+3. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri/361459.html
+4. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri--cozumlu-problemler/277751.html
+5. https://tf.selcuk.edu.tr/index.php?lang=tr&birim=033003&page=1412
+6. https://drive.google.com/file/d/1ZLtYjMn9w0YWgmeDYmQqLgbiB6Rvqtqy/view?ts=6284e506
+7. https://www.youtube.com/playlist?list=PLdcoZed79Zud8kBBBR6kXX7MZ4im5Eabh
+8. https://www.youtube.com/playlist?list=PLyIEwiklim9jb-TWDIblK4IqwLUuGValL
+9. https://www.youtube.com/playlist?list=PLMtASTThs8R2locHuQVG16Zt6OF9QOcgK
+10. https://www.youtube.com/playlist?list=PL6nCCC-hmdoFejiE8n5c49RtKL8J2stu1
 
+İÇERİK
 1.Giriş
 2.Laplace Dönüşümü
 3.Transfer Fonksiyonu ve Durum Uzay Modeli
