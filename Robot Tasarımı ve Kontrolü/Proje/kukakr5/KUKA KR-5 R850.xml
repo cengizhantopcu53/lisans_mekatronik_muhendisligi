@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/04/22||23:59:16" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="KUKA KR-5 R850" uid="KUKA KR-5 R850" version="970">
+<AssemblyFile name="KUKA KR-5 R850.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="1st Axis Arm-1" uid="1st Axis Arm-1" entityUid="1st Axis Arm*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+<Translation>2.5502766637536575e-13 0.20299964797302236 2.034410515929797e-15</Translation>
+</Transform>
+</Instance>
+<Instance name="3rd Axis Arm-1" uid="3rd Axis Arm-1" entityUid="3rd Axis Arm*:*Default">
+<Transform>
+<Rotation>2.3548871186385511e-16 -0.64280305472888222 0.76603148292431011 0 0.76603148292431011 0.64280305472888222 -1 -1.2388222110715711e-16 2.0346009946561891e-16</Rotation>
+<Translation>-0.171777289039867 0.68493594380802814 -0.0010000000000006807</Translation>
+</Transform>
+</Instance>
+<Instance name="4th Axis Arm-1" uid="4th Axis Arm-1" entityUid="4th Axis Arm*:*Default">
+<Transform>
+<Rotation>-0.76603148292431023 -0.64280305472888233 2.4541214990120586e-16 -0.64280305472888233 0.76603148292431023 0 -2.0346009946561775e-16 -1.3931997916438503e-16 -1</Rotation>
+<Translation>-0.39662442724296676 0.61374771134031991 -0.0010000000000007451</Translation>
+</Transform>
+</Instance>
+<Instance name="5th Axis Arm-1" uid="5th Axis Arm-1" entityUid="5th Axis Arm*:*Default">
+<Transform>
+<Rotation>3.6743749268387674e-16 -2.3635607360183997e-16 1 1.0000000000000002 0 -3.5342481487921204e-16 0 1 2.3592239273284576e-16</Rotation>
+<Translation>-0.5391062830668889 0.49418634316074717 -0.0020000000000008188</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Specular r="0.45294117647058824" g="0.43372549019607842" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="2nd Axis Arm-1" uid="2nd Axis Arm-1" entityUid="2nd Axis Arm*:*Default">
+<Transform>
+<Rotation>0.87829881820534994 0 0.47811210603694787 0.47811210603694787 0 -0.87829881820534994 0 1 0</Rotation>
+<Translation>-0.075000000000303685 0.33299964797289533 0.10649999999999998</Translation>
+</Transform>
+</Instance>
+<Instance name="6th Axis Arm-1" uid="6th Axis Arm-1" entityUid="6th Axis Arm*:*Default">
+<Transform>
+<Rotation>2.437286483747414e-16 -1 0 0.93261826254330893 2.4430044193625235e-16 0.36086448477330058 -0.36086448477330063 0 0.93261826254330915</Rotation>
+<Translation>-0.61310628306688886 0.49418634316074717 -0.002000000000000844</Translation>
+</Transform>
+</Instance>
+<Instance name="Base Motor Cover A-1" uid="Base Motor Cover A-1" entityUid="Base Motor Cover A*:*Default">
+<Transform>
+<Rotation>0.86602540378443638 0 -0.500000000000004 0 1 0 0.500000000000004 0 0.86602540378443638</Rotation>
+<Translation>0 0.18800000000000014 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Base-1" uid="Base-1" grounded="true" entityUid="Base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Eş Merkezli1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base Motor Cover A-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>8.563087850996585e-16 -0.049999647972843703 0</Position>
+<Axis>-1.712629590931343e-14 1 -1.3662014075136993e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base Motor Cover A-1</Uid>
+</InstancePath>
+<Position>0.079499999999999987 0.014999999999999986 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.10895001425127085 3.5202715817361785e-07 -0.0046007583348681262</Position>
+<Axis>1.712629590931343e-14 -1 1.3662014075136993e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Eş Merkezli2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.074999999999999969 0.13000000000000003 -0.023499999999999993</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>2nd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 -0.083000000000000018 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.14399068269060708 0.01308828885913968 -0.073499999999999996</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>2nd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 -0.033000000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Eş Merkezli3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>2nd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.08326562499999994 -0.068500000000000019 -0.35537562619481855</Position>
+<Axis>-1.6620105159059228e-16 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>3rd Axis Arm-1</Uid>
+</InstancePath>
+<Position>-0.069000000000000505 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>2nd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.08326562499999994 -0.038500000000000006 -0.35537562619481855</Position>
+<Axis>1.6620105159059228e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3rd Axis Arm-1</Uid>
+</InstancePath>
+<Position>-0.069000000000000519 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Eş Merkezli4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>3rd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0.09000000000000008 -0.19800000000000006</Position>
+<Axis>0 3.3306690738754701e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>4th Axis Arm-1</Uid>
+</InstancePath>
+<Position>-0.019999999999999962 -1.1102230246251565e-16 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3rd Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.05949999999999999 0.064413157124965092 -0.21800000000000003</Position>
+<Axis>0 3.3306690738754701e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>4th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 -0.19979428500230145 0.059499999999999997</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Eş Merkezli5">
+<ConstraintGeometry geomType="cone">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0.188 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>8.563087850996585e-16 -0.049999647972843703 0</Position>
+<Axis>-1.712629590931343e-14 1 -1.3662014075136993e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık5">
+<ConstraintGeometry geomType="cone">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0.20299999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cone">
+<InstancePath>
+<Uid>Base Motor Cover A-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Eş Merkezli6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>4th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.18600000000000005 0 0.059284271247461912</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 -0.055284271247461908 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Uzaklık2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0.027 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>4th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.11733540601621148 -0.19979428500230145 -0.031</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Eş Merkezli7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.072000000000000064</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>6th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0.0034999999999999476 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakışık8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.074000000000000066</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>6th Axis Arm-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Paralel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.014999999999999999 -0.085000000000000006</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>KUKA KR-5 R850</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Eş Merkezli8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>-0.11750000000000001 0.20700000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>1st Axis Arm-1</Uid>
+</InstancePath>
+<Position>0.11749999999999999 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="1st Axis Arm" uid="1st Axis Arm*:*Default" version="3061">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="1st Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.7854091173629953</Mass>
+<CenterOfMass>0.033214810389169881 0.078457355292989819 0.0082401774767970337</CenterOfMass>
+<Inertia>0.034646113501721691 0.033065867340733149 0.040024714480971606 -0.0025527666737512693 -0.0021358431340872687 -0.0099874944203068288</Inertia>
+</MassProperties>
+<GeometryFile name="1st Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="2nd Axis Arm" uid="2nd Axis Arm*:*Default" version="990">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="2nd Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.2565270835214122</Mass>
+<CenterOfMass>0.02877632585353716 0.0087390266038850119 -0.16102901231807404</CenterOfMass>
+<Inertia>0.13521414766993792 0.14677834768379452 0.021246455499278737 -0.0002721048624188404 0.026865471026687564 0.00047466779523236744</Inertia>
+</MassProperties>
+<GeometryFile name="2nd Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="3rd Axis Arm" uid="3rd Axis Arm*:*Default" version="572">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="3rd Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>4.4720981863642413</Mass>
+<CenterOfMass>0.0019740359967618179 0.05155857340275307 -0.064449220437797855</CenterOfMass>
+<Inertia>0.03742904796368527 0.031109316710236593 0.018879547855554953 0.0098701487554499184 -0.00056894420371915585 0.00045515604238251256</Inertia>
+</MassProperties>
+<GeometryFile name="3rd Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="4th Axis Arm" uid="4th Axis Arm*:*Default" version="803">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="4th Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.0448291900967397</Mass>
+<CenterOfMass>0.08341035949618289 -0.00019486318112606058 -0.00086184534377904286</CenterOfMass>
+<Inertia>0.0043148870288281628 0.0096264879482189057 0.0083674400793506652 0.00010813001031847179 -6.7008549772153305e-05 -1.3792297370332163e-05</Inertia>
+</MassProperties>
+<GeometryFile name="4th Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="5th Axis Arm" uid="5th Axis Arm*:*Default" version="448">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="5th Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.35774512576537099</Mass>
+<CenterOfMass>-2.0869437444998599e-08 2.6609407960199584e-09 -0.015607845624014079</CenterOfMass>
+<Inertia>0.00040987319445837236 0.00046265664553506571 0.00022396897383994909 1.3964474142166204e-11 -2.4711707624201879e-10 1.6820765925955999e-09</Inertia>
+</MassProperties>
+<GeometryFile name="5th Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="6th Axis Arm" uid="6th Axis Arm*:*Default" version="349">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="6th Axis Arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.012604757353359121</Mass>
+<CenterOfMass>0 0.0051539303554004601 0</CenterOfMass>
+<Inertia>1.9770014365133049e-06 3.6341185945568009e-06 1.9770014365133058e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="6th Axis Arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base Motor Cover A" uid="Base Motor Cover A*:*Default" version="218">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base Motor Cover A.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.349093226676506</Mass>
+<CenterOfMass>-3.7575322217774699e-08 0.008016595592424642 -2.2539756166100584e-07</CenterOfMass>
+<Inertia>0.0011135127983023505 0.0022142312757841612 0.0011135135632334187 -6.8622678065353342e-11 -2.056595908075619e-10 4.5247383277253881e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Base Motor Cover A_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base" uid="Base*:*Default" version="614">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.6836736477305916</Mass>
+<CenterOfMass>-0.0029213756842410318 0.072180936717226959 -2.2191030286756528e-06</CenterOfMass>
+<Inertia>0.01959508803663431 0.020490881422240276 0.020210612816999925 -4.0152974293639322e-07 4.7367103740479719e-07 0.00017033084253449202</Inertia>
+</MassProperties>
+<GeometryFile name="Base_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
