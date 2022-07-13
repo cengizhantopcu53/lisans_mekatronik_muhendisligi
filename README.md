@@ -43,14 +43,14 @@
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
+- Veri Haberleşme Sistemleri
+- İşaret ve Sistemler
+- Sayısal Sinyal İşleme
 - İnternet Tabanlı Programlama
 - Yapay Sinir Ağları
 - Optimizasyon Teknikleri
 - Bulanık Mantık ve Kontrol
 - Görüntü İşleme
-- Veri Haberleşme Sistemleri
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
 
 ## GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
