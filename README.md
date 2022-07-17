@@ -41,6 +41,7 @@
 - Mikradenetleyici Tabanlı Sistem Tasarımı
 - Elektrik Makinaları
 - Endüstriyel Otomasyon
+- Endüstriyel Elektronik
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
