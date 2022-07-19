@@ -25,8 +25,6 @@
 - Akışkanlar Mekaniği
 - Makine Elemanları
 - Bilgisayar Destekli Tasarım
-- Otomatik Kontrol I-II
-- Sistem Dinamiği ve Kontrolü
 - Robot Teorisi
 - Robot Tasarımı ve Kontrolü
 
@@ -42,6 +40,8 @@
 - Elektrik Makinaları
 - Endüstriyel Otomasyon
 - Endüstriyel Elektronik
+- Otomatik Kontrol I-II
+- Sistem Dinamiği ve Kontrolü
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
