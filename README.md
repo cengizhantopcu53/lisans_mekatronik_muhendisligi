@@ -16,7 +16,6 @@
 - Bilgsayar Destekli Teknik Resim
 - Malzeme Bilimi
 - İmal Usülleri
-- Bilgisayar Destekli Üretim
 - Statik
 - Biyomekanik
 - Dinamik
@@ -25,6 +24,7 @@
 - Akışkanlar Mekaniği
 - Makine Elemanları
 - Bilgisayar Destekli Tasarım
+- Bilgisayar Destekli Üretim
 - Robot Teorisi
 - Robot Tasarımı ve Kontrolü
 
@@ -32,16 +32,15 @@
 - Devre Teorisi
 - Elektronik I-II
 - Endüstriyel Elektronik
+- Algılıyıcılar ve Dönüştürücüler
+- Elektrik Makinaları
 - Sayısal Elektronik
 - Sayısal Elektronik Sistem Tasarımı
-- Algılıyıcılar ve Dönüştürücüler
 - Mikrodenetleyiciler ve Programlanması
 - Mikradenetleyici Tabanlı Sistem Tasarımı
-- Elektrik Makinaları
-- Endüstriyel Otomasyon
-- Endüstriyel Elektronik
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
+- Endüstriyel Otomasyon
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
