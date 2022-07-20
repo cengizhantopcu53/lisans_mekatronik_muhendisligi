@@ -32,8 +32,8 @@
 - Devre Teorisi
 - Elektronik I-II
 - Endüstriyel Elektronik
-- Algılıyıcılar ve Dönüştürücüler
 - Elektrik Makinaları
+- Algılıyıcılar ve Dönüştürücüler
 - Sayısal Elektronik
 - Sayısal Elektronik Sistem Tasarımı
 - Mikrodenetleyiciler ve Programlanması
