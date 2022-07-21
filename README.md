@@ -66,7 +66,3 @@
 ##
 ***Gelecek senelerde bu dersleri alacak kişiler için yol göstermesini umuyorum. Lütfen her bir ödev, proje ve sınavın bireysel ve kendi çabanız ile yapılması gerektiğini unutmayın.*** 
 ##
-
-https://www.youtube.com/playlist?list=PLoVX4C46JKvrPGQfBh6idk3IVT5sSFzbd
-
-https://linktr.ee/cengizhantopcu53
