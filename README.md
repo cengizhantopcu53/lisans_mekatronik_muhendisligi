@@ -62,12 +62,6 @@
 - Mühendislik Etiği
 - Araştırma ve Sunum Teknikleri
 - Değerler Eğitimi
-- Yazma Becerileri
-- Toplam Kalite Yöntemi
-- Etkili Konuşma ve Diksiyon
-- Stres Yönetimi
-- Toplumsal Hizmet Uygulamaları
-- Siber Güvenliğe Giriş
 
 ##
 ***Gelecek senelerde bu dersleri alacak kişiler için yol göstermesini umuyorum. Lütfen her bir ödev, proje ve sınavın bireysel ve kendi çabanız ile yapılması gerektiğini unutmayın.*** 
