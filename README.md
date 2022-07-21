@@ -60,6 +60,7 @@
 - Mesleki Yabancı Dil I-II
 - İş Sağlığı ve Güvenliği I-II
 - Mühendislik Etiği
+- Değerler Eğitimi
 - Araştırma ve Sunum Teknikleri
 
 ##
