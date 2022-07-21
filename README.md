@@ -61,7 +61,6 @@
 - İş Sağlığı ve Güvenliği I-II
 - Mühendislik Etiği
 - Araştırma ve Sunum Teknikleri
-- Değerler Eğitimi
 
 ##
 ***Gelecek senelerde bu dersleri alacak kişiler için yol göstermesini umuyorum. Lütfen her bir ödev, proje ve sınavın bireysel ve kendi çabanız ile yapılması gerektiğini unutmayın.*** 
