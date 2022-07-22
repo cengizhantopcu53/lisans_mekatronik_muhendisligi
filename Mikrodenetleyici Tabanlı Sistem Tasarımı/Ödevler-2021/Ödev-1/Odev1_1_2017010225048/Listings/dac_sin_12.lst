@@ -1,0 +1,126 @@
+A51 MACRO ASSEMBLER  DAC_SIN_12                                                           04/24/2021 09:14:40 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\dac_sin_12.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE dac_sin_12.a51 SET(SMALL) DEBUG PRINT(.\Listings\dac_sin_12.lst) OBJECT
+                      (.\Objects\dac_sin_12.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Yazar            : Cengizhan Topcu-2017010225048
+                       2     ; Gun              : 01 Nisan 2021                  
+                       3     ; Dosya ismi       : dac_sin_12.asm
+                       4     ; Donanim          : AduC842
+                       5     ; Aciklama         : 0V-3V arasinda 8kHz frekansinda 1000H adresinden itibaren 12kHz’de örn
+                             eklenmis program
+                       6     
+                       7     ;------------------------------------------------------------------------------------------
+                             -----------------
+                       8     $mod51 
+  00D7                 9          PLLCON     DATA  0D7H
+  00EF                10          ADCCON1    EQU   0xEF
+  00FD                11          DACCON             EQU       0xFD
+  00F9                12          DAC0L              EQU   0xF9
+  00FA                13          DAC0H              EQU   0xFA
+                      14     ;------------------------------------------------------------------------------------------
+                             -----------------
+----                  15          CSEG
+0000                  16          ORG        00H
+0000 2100             17          JMP     MAIN            
+                      18     ;------------------------------------------------------------------------------------------
+                             -----------------
+0100                  19     ORG 0100h
+0100                  20             MAIN:
+0100 75D700           21                 MOV     PLLCON,#00H         ;16,78 MHz olarak ayarlandi
+0103 75EF80           22                     MOV             ADCCON1,#80H
+0106 75FD2D           23                     MOV             DACCON,#2DH
+0109 758901           24                     MOV             TMOD,#01H           ;Timer0 ve Mod 1 olarak ayarlandi
+010C 758800           25                     MOV             TCON,#00H
+010F 901000           26                     MOV             DPTR,#SINTABLO      ;DPTR=1000H
+0112 7800             27                     MOV             R0,#00H                     ;R0 baslangiç degeri (N=0) 
+                      28     ;------------------------------------------------------------------------------------------
+                             -----------------
+0114                  29             DACYAZ: 
+0114 E8               30                     MOV             A,R0                
+0115 93               31                     MOVC    A,@A+DPTR                   ;TABLODAN H DEGERI AL
+0116 F9               32                     MOV             R1,A  
+                      33                     
+0117 08               34                     INC             R0                                  ;N=N+1
+0118 E8               35                     MOV             A,R0                
+0119 93               36                     MOVC    A,@A+DPTR                   ;TABLODAN L DEGERI AL
+011A FA               37                     MOV             R2,A
+                      38                     
+011B 89FA             39                     MOV             DAC0H,R1            
+011D 8AF9             40                     MOV             DAC0L,R2
+                      41     ;------------------------------------------------------------------------------------------
+                             -----------------            
+011F 312A             42                     ACALL   DELAY
+                      43     ;------------------------------------------------------------------------------------------
+                             -----------------            
+0121 08               44                     INC             R0                                  ;N=N+2
+0122 B818EF           45                     CJNE    R0,#24,DACYAZ       ;N=!24 ETIKETE ATLA
+0125 530000           46                     ANL             00H,#00H            ;N==24 N=0
+0128 80EA             47                     JMP             DACYAZ              ;TEKRARLA
+                      48     ;------------------------------------------------------------------------------------------
+                             -----------------
+012A                  49         DELAY:
+A51 MACRO ASSEMBLER  DAC_SIN_12                                                           04/24/2021 09:14:40 PAGE     2
+
+012A 758CFF           50             MOV     TH0,#0FFH           ;
+012D 758A7D           51                     MOV     TL0,#07DH           ;
+0130 D28C             52                     SETB    TR0                 ;TIMER0 SET EDILDI
+0132 308DFD           53                     JNB     TF0,$               ;TIMER0 DOLANA KADAR BEKLE
+0135 C28C             54                 CLR     TR0                 ;TRO BAYRAGI TEMIZLE
+0137 C28D             55                     CLR     TF0                 ;TFO BAYRAGI TEMIZLE
+0139 22               56                     RET
+                      57     ;------------------------------------------------------------------------------------------
+                             -----------------
+1000                  58     ORG 1000H
+1000                  59             SINTABLO:
+1000 04CD             60                     DB              04H,0CDH                    ;1.5  VOLT
+1002 0733             61                     DB              07H,33H                     ;2.25 VOLT
+1004 08F4             62                     DB              08H,0F4H                        ;2.8  VOLT
+1006 0999             63                     DB              09H,99H                     ;3    VOLT
+1008 08F4             64                     DB              08H,0F4H                    ;2.8  V0LT
+100A 0733             65                     DB              07H,33H                     ;2.25 VOLT
+100C 04CD             66                     DB              04H,0CDH                        ;1.5  VOLT
+100E 0266             67                     DB              02H,66H                     ;0.75 VOLT
+1010 00A5             68                     DB              00H,0A5H                    ;0.2  V0LT
+1012 0000             69                     DB              00H,00H                     ;0    VOLT
+1014 00A5             70                     DB              00H,0A5H                        ;0.2  VOLT
+1016 0266             71                     DB              02H,66H                     ;0.75 VOLT
+                      72     ;------------------------------------------------------------------------------------------
+                             -----------------                    
+                      73                     END
+                                                     
+                                                     
+A51 MACRO ASSEMBLER  DAC_SIN_12                                                           04/24/2021 09:14:40 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ADCCON1. . . . . .  N NUMB   00EFH   A   
+DAC0H. . . . . . .  N NUMB   00FAH   A   
+DAC0L. . . . . . .  N NUMB   00F9H   A   
+DACCON . . . . . .  N NUMB   00FDH   A   
+DACYAZ . . . . . .  C ADDR   0114H   A   
+DELAY. . . . . . .  C ADDR   012AH   A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+PLLCON . . . . . .  D ADDR   00D7H   A   
+SINTABLO . . . . .  C ADDR   1000H   A   
+TCON . . . . . . .  D ADDR   0088H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

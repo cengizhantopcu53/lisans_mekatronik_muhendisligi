@@ -1,0 +1,3 @@
+".\Objects\dac_sin_12.obj" 
+TO ".\Objects\Odev1_1_2017010225048" 
+PRINT(".\Listings\Odev1_1_2017010225048.m51") RAMSIZE(256) 

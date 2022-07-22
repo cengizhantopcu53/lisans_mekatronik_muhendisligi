@@ -1,0 +1,83 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/24/2021  09:14:40  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\dac_sin_12.obj TO .\Objects\Odev1_1_2017010225048 PRINT (.\Listings\Odev1_1_201701
+>> 0225048.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\dac_sin_12.obj (DAC_SIN_12)
+
+
+LINK MAP OF MODULE:  .\Objects\Odev1_1_2017010225048 (DAC_SIN_12)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     1018H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Odev1_1_2017010225048 (DAC_SIN_12)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DAC_SIN_12
+  N:00EFH         SYMBOL        ADCCON1
+  N:00FAH         SYMBOL        DAC0H
+  N:00F9H         SYMBOL        DAC0L
+  N:00FDH         SYMBOL        DACCON
+  C:0114H         SYMBOL        DACYAZ
+  C:012AH         SYMBOL        DELAY
+  C:0100H         SYMBOL        MAIN
+  D:00D7H         SYMBOL        PLLCON
+  C:1000H         SYMBOL        SINTABLO
+  D:0088H         SYMBOL        TCON
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         17
+  C:0100H         LINE#         21
+  C:0103H         LINE#         22
+  C:0106H         LINE#         23
+  C:0109H         LINE#         24
+  C:010CH         LINE#         25
+  C:010FH         LINE#         26
+  C:0112H         LINE#         27
+  C:0114H         LINE#         30
+  C:0115H         LINE#         31
+  C:0116H         LINE#         32
+  C:0117H         LINE#         34
+  C:0118H         LINE#         35
+  C:0119H         LINE#         36
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/24/2021  09:14:40  PAGE 2
+
+
+  C:011AH         LINE#         37
+  C:011BH         LINE#         39
+  C:011DH         LINE#         40
+  C:011FH         LINE#         42
+  C:0121H         LINE#         44
+  C:0122H         LINE#         45
+  C:0125H         LINE#         46
+  C:0128H         LINE#         47
+  C:012AH         LINE#         50
+  C:012DH         LINE#         51
+  C:0130H         LINE#         52
+  C:0132H         LINE#         53
+  C:0135H         LINE#         54
+  C:0137H         LINE#         55
+  C:0139H         LINE#         56
+  -------         ENDMOD        DAC_SIN_12
+
+Program Size: data=8.0 xdata=0 code=4120
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
