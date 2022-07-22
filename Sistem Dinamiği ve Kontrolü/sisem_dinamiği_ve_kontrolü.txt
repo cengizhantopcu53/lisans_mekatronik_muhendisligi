@@ -1,18 +1,18 @@
 KAYNAKÇA 
-	1. Otomatik Kontrol Sistemleri-Benjamin C.Kuocev
-	2. Modern Kontrol Mühendisliği - Katsuhiko Ogata
-	3. Otomotik Kontrol-İbrahim Yüksel
-	4. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim sistemleri/361459.html
-	5. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri--cozumlu-  problemler/277751.html
-	6. https://tf.selcuk.edu.tr/index.php?lang=tr&birim=033003&page=1412
-	7. https://drive.google.com/file/d/1ZLtYjMn9w0YWgmeDYmQqLgbiB6Rvqtqy/view?ts=6284e506
-	8. https://www.youtube.com/playlist?list=PLdcoZed79Zud8kBBBR6kXX7MZ4im5Eabh
-	9. https://www.youtube.com/playlist?list=PLyIEwiklim9jb-TWDIblK4IqwLUuGValL
-	10. https://www.youtube.com/playlist?list=PLMtASTThs8R2locHuQVG16Zt6OF9QOcgK
-	11. https://www.youtube.com/playlist?list=PL6nCCC-hmdoFejiE8n5c49RtKL8J2stu1
-	12. https://www.youtube.com/playlist?list=PLXpRXgXiS1G-Z28dZOjkdTxtii8d9NJAY
-	13. https://www.youtube.com/playlist?list=PLXpRXgXiS1G8H8ies5GkHc4PIOTyvEpUt
-	14. https://www.slideshare.net/OmarElfarouk3/modern-control-engineering-5th-ed-solution-manual-2010
+1. Otomatik Kontrol Sistemleri-Benjamin C.Kuocev
+2. Modern Kontrol Mühendisliği - Katsuhiko Ogata
+3. Otomotik Kontrol-İbrahim Yüksel
+4. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim sistemleri/361459.html
+5. https://www.kitapyurdu.com/kitap/otomatik-kontrol-amp-sistem-dinamigi-ve-denetim-sistemleri--cozumlu-  problemler/277751.html
+6. https://tf.selcuk.edu.tr/index.php?lang=tr&birim=033003&page=1412
+7. https://drive.google.com/file/d/1ZLtYjMn9w0YWgmeDYmQqLgbiB6Rvqtqy/view?ts=6284e506
+8. https://www.youtube.com/playlist?list=PLdcoZed79Zud8kBBBR6kXX7MZ4im5Eabh
+9. https://www.youtube.com/playlist?list=PLyIEwiklim9jb-TWDIblK4IqwLUuGValL
+10. https://www.youtube.com/playlist?list=PLMtASTThs8R2locHuQVG16Zt6OF9QOcgK
+11. https://www.youtube.com/playlist?list=PL6nCCC-hmdoFejiE8n5c49RtKL8J2stu1
+12. https://www.youtube.com/playlist?list=PLXpRXgXiS1G-Z28dZOjkdTxtii8d9NJAY
+13. https://www.youtube.com/playlist?list=PLXpRXgXiS1G8H8ies5GkHc4PIOTyvEpUt
+14. https://www.slideshare.net/OmarElfarouk3/modern-control-engineering-5th-ed-solution-manual-2010
 
 İÇERİK
 1.Giriş
