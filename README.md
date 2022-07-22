@@ -43,9 +43,6 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
-- Veri Haberleşme Sistemleri
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
 - İnternet Tabanlı Programlama
 - Yapay Sinir Ağları
 - Optimizasyon Teknikleri
