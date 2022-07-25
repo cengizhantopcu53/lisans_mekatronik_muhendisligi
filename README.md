@@ -1,6 +1,10 @@
 Karabük Üniversitesi Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik)
 ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına ulaşarak detaylı bilgi alabilirsiniz.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/64609951/180844931-6625c42d-8ffb-4229-8c4e-f2a140cea71a.png" width="175">
+</p>
+
 ## TEMEL BİLİMLER
 - Matematik I-II
 - Diferansiyel Denklemler
