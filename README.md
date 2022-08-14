@@ -37,6 +37,8 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Sayısal Elektronik Sistem Tasarımı
 - Mikrodenetleyiciler ve Programlanması
 - Mikradenetleyici Tabanlı Sistem Tasarımı
+- Otomatik Kontrol I-II
+- Sistem Dinamiği ve Kontrolü
 - Endüstriyel Otomasyon
 
 ## YAZILIM
@@ -48,11 +50,6 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Görüntü İşleme
 - Yapay Sinir Ağları
 - Optimizasyon Teknikleri
-- Bulanık Mantık ve Kontrol
-
-## KONTROL
-- Otomatik Kontrol I-II
-- Sistem Dinamiği ve Kontrolü
 - Bulanık Mantık ve Kontrol
 
 ## GENEL EĞİTİM
