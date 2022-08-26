@@ -30,13 +30,13 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 ## ELEKTRONİK
 - Devre Teorisi
 - Elektronik I-II
-- Endüstriyel Elektronik
-- Elektrik Makinaları
-- Algılıyıcılar ve Dönüştürücüler
 - Sayısal Elektronik
 - Sayısal Elektronik Sistem Tasarımı
+- Algılıyıcılar ve Dönüştürücüler
 - Mikrodenetleyiciler ve Programlanması
 - Mikradenetleyici Tabanlı Sistem Tasarımı
+- Endüstriyel Elektronik
+- Elektrik Makinaları
 - Endüstriyel Otomasyon
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
