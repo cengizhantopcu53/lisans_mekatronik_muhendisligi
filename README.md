@@ -38,13 +38,15 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Endüstriyel Elektronik
 - Elektrik Makinaları
 - Endüstriyel Otomasyon
+- Veri Haberleşme
+- İşaret ve Sistemler
+- Sayısal Sinyal İşleme
+
+## KONTROL
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
 - Bulanık Mantık ve Kontrol
 - Optimizasyon Teknikleri
-- Veri Haberleşme
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
