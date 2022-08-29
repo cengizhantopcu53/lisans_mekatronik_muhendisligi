@@ -48,11 +48,11 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 ## YAZILIM
 - Bilgisayar Programlama I-II
 - İnternet Tabanlı Programlama
-- Yapay Sinir Ağları
-- Görüntü İşleme
 - Veri Haberleşme
 - İşaret ve Sistemler
 - Sayısal Sinyal İşleme
+- Görüntü İşleme
+- Yapay Sinir Ağları
 
 ## GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
