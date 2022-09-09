@@ -40,13 +40,13 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Endüstriyel Otomasyon
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
+- Veri Haberleşme
+- İşaret ve Sistemler
+- Sayısal Sinyal İşleme
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
 - İnternet Tabanlı Programlama
-- Veri Haberleşme
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
 - Görüntü İşleme
 - Yapay Sinir Ağları
 - Bulanık Mantık ve Kontrol
