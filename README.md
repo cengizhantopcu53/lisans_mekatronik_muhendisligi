@@ -40,6 +40,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Endüstriyel Otomasyon
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
+- Bulanık Mantık ve Kontrol
 - Veri Haberleşme
 - İşaret ve Sistemler
 - Sayısal Sinyal İşleme
@@ -49,7 +50,6 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - İnternet Tabanlı Programlama
 - Görüntü İşleme
 - Yapay Sinir Ağları
-- Bulanık Mantık ve Kontrol
 - Optimizasyon Teknikleri
 
 ## GENEL EĞİTİM
