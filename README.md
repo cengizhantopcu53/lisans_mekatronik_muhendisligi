@@ -23,9 +23,6 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Akışkanlar Mekaniği
 - Makine Elemanları
 - Bilgisayar Destekli Tasarım
-- Bilgisayar Destekli Üretim
-- Robot Teorisi
-- Robot Tasarımı ve Kontrolü
 
 ## ELEKTRONİK
 - Devre Teorisi
@@ -37,20 +34,24 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Sayısal Elektronik Sistem Tasarımı
 - Mikrodenetleyiciler ve Programlanması
 - Mikradenetleyici Tabanlı Sistem Tasarımı
-- Endüstriyel Otomasyon
+
+## KONTROL
 - Otomatik Kontrol I-II
 - Sistem Dinamiği ve Kontrolü
 - Bulanık Mantık ve Kontrol
-- Veri Haberleşme
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
+- Optimizasyon Teknikleri
+- Endüstriyel Otomasyon
+- Robot Teorisi
+- Robot Tasarımı ve Kontrolü
 
 ## YAZILIM
 - Bilgisayar Programlama I-II
 - İnternet Tabanlı Programlama
 - Görüntü İşleme
 - Yapay Sinir Ağları
-- Optimizasyon Teknikleri
+- Veri Haberleşme
+- İşaret ve Sistemler
+- Sayısal Sinyal İşleme
 
 ## GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
