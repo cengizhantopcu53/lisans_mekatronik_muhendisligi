@@ -1,7 +1,7 @@
 Karabük Üniversitesi Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik)
 ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına ulaşarak detaylı bilgi alabilirsiniz.
 
-# TEMEL BİLİMLER
+## TEMEL BİLİMLER
 - Matematik I-II
 - Diferansiyel Denklemler
 - Lineer Cebir
@@ -11,7 +11,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Genel Kimya
 - Mekatronik Mühendisliğine Giriş
 
-# MEKANİK
+## MEKANİK
 - [Bilgsayar Destekli Teknik Resim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Teknik%20Resim/%C3%96devler-2018)
 - [Malzeme Bilimi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Malzeme%20Bilimi)
 - [İmal Usülleri](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0mal%20Us%C3%BClleri)
@@ -25,7 +25,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Bilgisayar Destekli Tasarım](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Tasar%C4%B1m/%C3%96devler-2019)
 - [Bilgisayar Destekli Üretim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20%C3%9Cretim)
 
-# ELEKTRONİK
+## ELEKTRONİK
 - [Devre Teorisi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Devre%20Teorisi)
 - [Elektronik I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektronik%20I)
 - [Elektronik II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektronik%20II)
@@ -41,7 +41,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [İşaret ve Sistemler](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0%C5%9Faret%20ve%20Sistemler)
 - [Sayısal Sinyal İşleme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Sinyal%20%C4%B0%C5%9Fleme/Ders%20Notlar%C4%B1-2021)
 
-# KONTROL
+## KONTROL
 - [Otomatik Kontrol I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20I)
 - [Otomatik Kontrol II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20II)
 - [Sistem Dinamiği ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Sistem%20Dinami%C4%9Fi%20ve%20Kontrol%C3%BC)
@@ -50,14 +50,14 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Robot Teorisi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Teorisi)
 - [Robot Tasarımı ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Tasar%C4%B1m%C4%B1%20ve%20Kontrol%C3%BC)
 
-# YAZILIM
+## YAZILIM
 - [Bilgisayar Programlama I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20I)
 - [Bilgisayar Programlama II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20II/Ders%20Notlar%C4%B1-2019)
 - [İnternet Tabanlı Programlama](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0nternet%20Tabanl%C4%B1%20Programlama)
 - [Görüntü İşleme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
 - [Yapay Sinir Ağları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Yapay%20Sinir%20A%C4%9Flar%C4%B1)
 
-# GENEL EĞİTİM
+## GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
 - Türk Dili I-II
 - Yabancı Dil I-II
