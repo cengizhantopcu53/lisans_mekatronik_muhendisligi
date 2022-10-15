@@ -26,15 +26,16 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Bilgisayar Destekli Üretim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20%C3%9Cretim)
 
 ## ELEKTRONİK
-- Devre Teorisi
-- Elektronik I-II
-- Endüstriyel Elektronik
-- Elektrik Makinaları
+- [Devre Teorisi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Devre%20Teorisi)
+- [Elektronik I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektronik%20I)
+- [Elektronik II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektronik%20II)
+- [Endüstriyel Elektronik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/End%C3%BCstriyel%20Elektronik)
+- [Elektrik Makinaları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektrik%20Makinalar%C4%B1)
 - Algılıyıcılar ve Dönüştürücüler
-- Sayısal Elektronik
-- Sayısal Elektronik Sistem Tasarımı
-- Mikrodenetleyiciler ve Programlanması
-- Mikradenetleyici Tabanlı Sistem Tasarımı
+- [Sayısal Elektronik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik
+- [SayısalElektronikSistemTasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik%20Sistem%20Tasar%C4%B1m%C4%B1)
+- [Mikrodenetleyiciler ve Programlanması](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyiciler%20ve%20Programlanmas%C4%B1)
+- [Mikradenetleyici Tabanlı Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyici%20Tabanl%C4%B1%20Sistem%20Tasar%C4%B1m%C4%B1)
 - Veri Haberleşme
 - İşaret ve Sistemler
 - Sayısal Sinyal İşleme
