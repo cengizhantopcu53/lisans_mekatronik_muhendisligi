@@ -15,13 +15,13 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Bilgsayar Destekli Teknik Resim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Teknik%20Resim/%C3%96devler-2018)
 - [Malzeme Bilimi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Malzeme%20Bilimi)
 - İmal Usülleri
-- Statik
-- Biyomekanik
-- Dinamik
-- Makine Dinamiği
-- Mukavemet
+- [Statik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Statik)
+- [Biyomekanik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Biyomekanik)
+- [Dinamik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Dinamik)
+- [Makine Dinamiği](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Makine%20Dinami%C4%9Fi)
+- [Mukavemet](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mukavemet)
 - Akışkanlar Mekaniği
-- Makine Elemanları
+- [Makine Elemanları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Makine%20Elemanlar%C4%B1)
 - [Bilgisayar Destekli Tasarım](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Tasar%C4%B1m/%C3%96devler-2019)
 - [Bilgisayar Destekli Üretim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20%C3%9Cretim)
 
@@ -49,7 +49,8 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Robot Tasarımı ve Kontrolü
 
 ## YAZILIM
-- Bilgisayar Programlama I-II
+- [Bilgisayar Programlama I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20I)
+- [Bilgisayar Programlama II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20II/Ders%20Notlar%C4%B1-2019)
 - İnternet Tabanlı Programlama
 - Görüntü İşleme
 - Yapay Sinir Ağları
