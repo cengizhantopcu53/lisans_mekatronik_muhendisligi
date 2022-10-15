@@ -53,9 +53,9 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 ## YAZILIM
 - [Bilgisayar Programlama I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20I)
 - [Bilgisayar Programlama II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20II/Ders%20Notlar%C4%B1-2019)
-- İnternet Tabanlı Programlama
-- Görüntü İşleme
-- Yapay Sinir Ağları
+- [İnternet Tabanlı Programlama](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0nternet%20Tabanl%C4%B1%20Programlama)
+- [Görüntü İşleme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
+- [Yapay Sinir Ağları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Yapay%20Sinir%20A%C4%9Flar%C4%B1)
 
 ## GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
