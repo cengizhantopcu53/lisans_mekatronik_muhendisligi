@@ -42,7 +42,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Sayısal Sinyal İşleme
 
 ## KONTROL
-- Otomatik Kontrol I(https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20I)
+- [Otomatik Kontrol I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20I)
 - [Otomatik Kontrol II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20II)
 - [Sistem Dinamiği ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Sistem%20Dinami%C4%9Fi%20ve%20Kontrol%C3%BC)
 - [Bulanık Mantık ve Kontrol](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bulan%C4%B1k%20Mant%C4%B1k%20ve%20Kontrol)
