@@ -36,6 +36,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Sayısal Elektronik Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik%20Sistem%20Tasar%C4%B1m%C4%B1)
 - [Mikrodenetleyiciler ve Programlanması](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyiciler%20ve%20Programlanmas%C4%B1)
 - [Mikradenetleyici Tabanlı Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyici%20Tabanl%C4%B1%20Sistem%20Tasar%C4%B1m%C4%B1)
+- [Endüstriyel Otomasyon](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/End%C3%BCstriyel%20Otomasyon)
 - Veri Haberleşme
 - İşaret ve Sistemler
 - Sayısal Sinyal İşleme
@@ -46,9 +47,8 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Sistem Dinamiği ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Sistem%20Dinami%C4%9Fi%20ve%20Kontrol%C3%BC)
 - [Bulanık Mantık ve Kontrol](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bulan%C4%B1k%20Mant%C4%B1k%20ve%20Kontrol)
 - [Optimizasyon Teknikleri](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Optimizasyon%20Teknikleri)
-- Endüstriyel Otomasyon
-- Robot Teorisi
-- Robot Tasarımı ve Kontrolü
+- [Robot Teorisi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Teorisi)
+- [Robot Tasarımı ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Tasar%C4%B1m%C4%B1%20ve%20Kontrol%C3%BC)
 
 ## YAZILIM
 - [Bilgisayar Programlama I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20I)
