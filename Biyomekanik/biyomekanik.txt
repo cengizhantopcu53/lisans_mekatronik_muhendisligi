@@ -1,6 +1,6 @@
 KAYNAKÇA 
-	1. Basic Biomechanics-Susan Hall
-	2. Temel Biyomekanik-Nihat Özkaya
+1. Basic Biomechanics-Susan Hall
+2. Temel Biyomekanik-Nihat Özkaya
  
 1.Biyomekanik Nedir 
 1.1 Biyomekanik: Tanım ve Perspektif
