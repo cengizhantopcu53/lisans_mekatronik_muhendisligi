@@ -13,14 +13,14 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 
 ## MEKANİK
 - [Bilgsayar Destekli Teknik Resim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Teknik%20Resim/%C3%96devler-2018)
-- Malzeme Bilimi
-- İmal Usülleri
+- [Malzeme Bilimi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Malzeme%20Bilimi)
+- [İmal Usülleri](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0mal%20Us%C3%BClleri)
 - [Statik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Statik)
 - [Biyomekanik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Biyomekanik)
 - [Dinamik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Dinamik)
 - [Makine Dinamiği](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Makine%20Dinami%C4%9Fi)
 - [Mukavemet](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mukavemet)
-- Akışkanlar Mekaniği
+- [Akışkanlar Mekaniği](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Ak%C4%B1%C5%9Fkanlar%20Mekani%C4%9Fi)
 - [Makine Elemanları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Makine%20Elemanlar%C4%B1)
 - [Bilgisayar Destekli Tasarım](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Tasar%C4%B1m/%C3%96devler-2019)
 - [Bilgisayar Destekli Üretim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20%C3%9Cretim)
@@ -31,15 +31,15 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Elektronik II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektronik%20II)
 - [Endüstriyel Elektronik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/End%C3%BCstriyel%20Elektronik)
 - [Elektrik Makinaları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektrik%20Makinalar%C4%B1)
-- Algılıyıcılar ve Dönüştürücüler
+- [Algılıyıcılar ve Dönüştürücüler](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Alg%C4%B1lay%C4%B1c%C4%B1lar%20ve%20D%C3%B6n%C3%BC%C5%9Ft%C3%BCr%C3%BCc%C3%BCler/S%C4%B1navlar)
 - [Sayısal Elektronik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik)
 - [Sayısal Elektronik Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik%20Sistem%20Tasar%C4%B1m%C4%B1)
 - [Mikrodenetleyiciler ve Programlanması](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyiciler%20ve%20Programlanmas%C4%B1)
 - [Mikradenetleyici Tabanlı Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyici%20Tabanl%C4%B1%20Sistem%20Tasar%C4%B1m%C4%B1)
 - [Endüstriyel Otomasyon](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/End%C3%BCstriyel%20Otomasyon)
-- Veri Haberleşme
-- İşaret ve Sistemler
-- Sayısal Sinyal İşleme
+- [Veri Haberleşme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Veri%20Haberle%C5%9Fme)
+- [İşaret ve Sistemler](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0%C5%9Faret%20ve%20Sistemler)
+- [Sayısal Sinyal İşleme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Sinyal%20%C4%B0%C5%9Fleme/Ders%20Notlar%C4%B1-2021)
 
 ## KONTROL
 - [Otomatik Kontrol I](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Otomatik%20Kontrol%20I)
