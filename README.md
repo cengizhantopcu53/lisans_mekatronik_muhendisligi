@@ -13,7 +13,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 
 ## MEKANİK
 - [Bilgsayar Destekli Teknik Resim](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Teknik%20Resim/%C3%96devler-2018)
-- [Malzeme Bilimi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Malzeme%20Bilimi)
+- Malzeme Bilimi
 - İmal Usülleri
 - [Statik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Statik)
 - [Biyomekanik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Biyomekanik)
