@@ -1,8 +1,10 @@
 Karabük Üniversitesi Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik)
 ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına ulaşarak detaylı bilgi alabilirsiniz.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/64609951/196000642-5516cc51-c2ba-4e4d-9023-4ae32082f200.png" width="400"><br>
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/64609951/196000862-021ef3e5-65f8-473e-afe0-93e9afe424ec.jpg" width="330" />
+  <img src="https://user-images.githubusercontent.com/64609951/196000642-5516cc51-c2ba-4e4d-9023-4ae32082f200.png" width="370" /> 
+  <img src="https://user-images.githubusercontent.com/64609951/196001086-da04a89e-84f7-496e-a1bf-aa7469a6d632.png" width="280" />
 </p>
 
 ## TEMEL BİLİMLER
