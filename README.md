@@ -33,7 +33,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - [Elektrik Makinaları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Elektrik%20Makinalar%C4%B1)
 - Algılıyıcılar ve Dönüştürücüler
 - [Sayısal Elektronik](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik)
-- [SayısalElektronikSistemTasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik%20Sistem%20Tasar%C4%B1m%C4%B1)
+- [Sayısal Elektronik Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Say%C4%B1sal%20Elektronik%20Sistem%20Tasar%C4%B1m%C4%B1)
 - [Mikrodenetleyiciler ve Programlanması](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyiciler%20ve%20Programlanmas%C4%B1)
 - [Mikradenetleyici Tabanlı Sistem Tasarımı](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Mikrodenetleyici%20Tabanl%C4%B1%20Sistem%20Tasar%C4%B1m%C4%B1)
 - Veri Haberleşme
