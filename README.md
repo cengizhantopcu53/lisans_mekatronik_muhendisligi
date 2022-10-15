@@ -12,7 +12,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Mekatronik Mühendisliğine Giriş
 
 ## MEKANİK
-- Bilgsayar Destekli Teknik Resim
+- [Bilgsayar Destekli Teknik Resim] (https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Teknik%20Resim/%C3%96devler-2018)
 - Malzeme Bilimi
 - İmal Usülleri
 - Statik
@@ -22,7 +22,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Mukavemet
 - Akışkanlar Mekaniği
 - Makine Elemanları
-- Bilgisayar Destekli Tasarım
+- [Bilgisayar Destekli Tasarım] (https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Destekli%20Tasar%C4%B1m/%C3%96devler-2019)
 
 ## ELEKTRONİK
 - Devre Teorisi
