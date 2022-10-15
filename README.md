@@ -20,7 +20,7 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Dinamik
 - Makine Dinamiği
 - Mukavemet
-- [Akışkanlar Mekaniği](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Ak%C4%B1%C5%9Fkanlar%20Mekani%C4%9Fi)
+- Akışkanlar Mekaniği
 - Makine Elemanları
 - Bilgisayar Destekli Tasarım
 
