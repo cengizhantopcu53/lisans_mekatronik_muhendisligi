@@ -1,5 +1,6 @@
 # Lisans Mekatronik Mühendisliği
 
+Aynı bölümde okuyan ya da kendini bu alanda geliştirmek isteyen öğrenci arkadaşlar için üniversite süreci boyunca aldığım derslerde yaptığım ders notlarını, ödevleri ve soruları bulabilirsiniz.
 Karabük Üniversitesi Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik)
 ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına linkten ulaşarak detaylı bilgi alabilirsiniz.
 
