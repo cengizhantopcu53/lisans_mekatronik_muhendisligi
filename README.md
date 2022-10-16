@@ -1,7 +1,7 @@
 # Lisans Mekatronik Mühendisliği
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/64609951/196000642-5516cc51-c2ba-4e4d-9023-4ae32082f200.png" width="400"> 
+  <img src="https://user-images.githubusercontent.com/64609951/196032304-f05d4fd2-64cf-4d79-88f0-598920cfa12b.png" width="500"> 
 </p>
 
 ### TEMEL BİLİMLER
