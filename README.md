@@ -1,9 +1,5 @@
 # Lisans Mekatronik Mühendisliği
 
-Aynı bölümde okuyan ya da kendini bu alanda geliştirmek isteyen öğrenci arkadaşlar için üniversite süreci boyunca aldığım derslerde yaptığım ders notlarını, ödevleri ve soruları bulabilirsiniz.<br>
-Karabük Üniversitesi Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik)
-ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına linkten ulaşarak detaylı bilgi alabilirsiniz.
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64609951/196000642-5516cc51-c2ba-4e4d-9023-4ae32082f200.png" width="400"> 
 </p>
@@ -75,5 +71,6 @@ ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=
 - Araştırma ve Sunum Teknikleri
 
 ##
-***Gelecek senelerde bu dersleri alacak kişiler için yol göstermesini umuyorum. Lütfen her bir ödev, proje ve sınavın bireysel ve kendi çabanız ile yapılması gerektiğini unutmayın.*** 
+***Aynı bölümde okuyan ya da kendini bu alanda geliştirmek isteyenler için üniversite süreci boyunca aldığım derslerde yaptığım ders notlarını, ödevleri, projeleri ve sınavları bulabilirsiniz. Gelecek senelerde bu dersleri alacak kişiler için yol göstermesini umuyorum. Lütfen her bir ödev, proje ve sınavın bireysel ve kendi çabanız ile yapılması gerektiğini unutmayın.<br>
+Üniversite ve bölüm hakkında bilgi almak için [Karabük Üniversitesi](https://www.karabuk.edu.tr/) Mühendislik Fakültesi Mekatronik Mühendisliği [Resmi Sayfası](https://muh.karabuk.edu.tr/mekatronik) ile [Program Bilgileri](https://obs.karabuk.edu.tr/oibs/bologna/index.aspx?lang=tr&curOp=showPac&curUnit=0200&curSunit=305) kısımlarına linkten ulaşarak detaylı bilgi alabilirsiniz.*** 
 ##
