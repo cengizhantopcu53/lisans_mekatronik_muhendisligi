@@ -6,8 +6,8 @@
 
 ### TEMEL BİLİMLER
 - Matematik I-II
-- Diferansiyel Denklemler
 - Lineer Cebir
+- Diferansiyel Denklemler
 - Olasılık ve İstatistik
 - Sayısal Analiz
 - Genel Fizik I-II
