@@ -50,6 +50,7 @@
 - [Sistem Dinamiği ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Sistem%20Dinami%C4%9Fi%20ve%20Kontrol%C3%BC)
 - [Bulanık Mantık ve Kontrol](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bulan%C4%B1k%20Mant%C4%B1k%20ve%20Kontrol)
 - [Optimizasyon Teknikleri](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Optimizasyon%20Teknikleri)
+- [Yapay Sinir Ağları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Yapay%20Sinir%20A%C4%9Flar%C4%B1)
 - [Robot Teorisi](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Teorisi)
 - [Robot Tasarımı ve Kontrolü](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Robot%20Tasar%C4%B1m%C4%B1%20ve%20Kontrol%C3%BC)
 
@@ -58,7 +59,6 @@
 - [Bilgisayar Programlama II](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Bilgisayar%20Programlama%20II/Ders%20Notlar%C4%B1-2019)
 - [İnternet Tabanlı Programlama](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/%C4%B0nternet%20Tabanl%C4%B1%20Programlama)
 - [Görüntü İşleme](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
-- [Yapay Sinir Ağları](https://github.com/cengizhantopcu53/lisans_mekatronik_muhendisligi/tree/main/Yapay%20Sinir%20A%C4%9Flar%C4%B1)
 
 ### GENEL EĞİTİM
 - Atatürk İlkeleri ve İnkilap Tarihi I-II
