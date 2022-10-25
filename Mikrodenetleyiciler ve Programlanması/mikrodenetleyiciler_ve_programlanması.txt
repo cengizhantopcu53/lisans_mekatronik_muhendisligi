@@ -1,5 +1,5 @@
 KAYNAKÇA 
-1.https://www.youtube.com/playlist?list=PLgwJf8NK-2e4Wvn3J1kUqnPO-KFe46omw
+1. https://www.youtube.com/playlist?list=PLgwJf8NK-2e4Wvn3J1kUqnPO-KFe46omw
 
 İÇERİK
 1.8051 Mimarisi
