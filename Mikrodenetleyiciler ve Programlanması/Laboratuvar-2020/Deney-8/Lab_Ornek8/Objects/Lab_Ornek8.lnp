@@ -1,3 +1,0 @@
-".\Objects\serial.obj" 
-TO ".\Objects\Lab_Ornek8" 
-PRINT(".\Listings\Lab_Ornek8.m51") RAMSIZE(256) 

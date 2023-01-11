@@ -1,3 +1,0 @@
-".\Objects\led_blink.obj" 
-TO ".\Objects\Lab_Ornek2" 
-PRINT(".\Listings\Lab_Ornek2.m51") RAMSIZE(256) 

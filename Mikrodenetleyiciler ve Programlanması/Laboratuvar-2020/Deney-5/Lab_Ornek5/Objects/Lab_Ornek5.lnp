@@ -1,3 +1,0 @@
-".\Objects\pwm.obj" 
-TO ".\Objects\Lab_Ornek5" 
-PRINT(".\Listings\Lab_Ornek5.m51") RAMSIZE(256) 
