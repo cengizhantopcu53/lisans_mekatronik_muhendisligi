@@ -76,7 +76,6 @@ c=findobj(gcbf,'Tag','altpanel');
 set(c,'String',b);
 
 -------------------------------------------
-TOPLAMA. ÇIKARMA .ÇARPMA .BÖLME .VÝRGÜL .ANS . C. EÞÝTTÝR , GERÝ SÝLME
 
 
 
