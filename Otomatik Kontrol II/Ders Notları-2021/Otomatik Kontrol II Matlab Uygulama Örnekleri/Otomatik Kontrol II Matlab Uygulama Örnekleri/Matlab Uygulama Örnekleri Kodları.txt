@@ -1,0 +1,83 @@
+1.8.Skill-Assessment Exercise 1
+s=2+6j;
+G=(s-2)/((s+3));
+Theta=(180/pi)*angle(G)
+M=abs(G)
+
+------------------------------------------------------
+
+2.8.Skill-Assessment Exercise 2
+s=-3+0j;
+G=(s+2)/(s^2+4 *s+13);
+Theta=(180/pi)*angle(G)
+M=abs(G);
+K=1/M
+
+------------------------------------------------------
+
+3.kok_yer_egrisi_cizme_ornek_1  
+  % (s+3)(s+4) = s^2+7s+12
+%------------------------
+  % (s+1)(s+2) = s^2+3s+2
+
+sifirlar= [1 7 12]; 
+kutuplar= [1 3 2];
+
+G=tf(sifirlar,kutuplar);
+rlocus(G);
+
+------------------------------------------------------
+
+4.kok_yer_egrisi_cizme_ornek_2
+  % K = 1
+%--------------------------------
+  % s(s+4)(s+6) = s^3+10s^2+24s+0
+
+sifirlar= [1]; 
+kutuplar= [1 10 24 0];
+
+G=tf(sifirlar,kutuplar);
+rlocus(G);
+
+------------------------------------------------------
+
+5.kok_yer_egrisi_cizme_ornek_3
+  % K(s+8) = s+8
+%------------------------
+  % (s+3)(s+6)(s+10) = s^3+19s^2+108s+180
+
+sifirlar= [1 8]; 
+kutuplar= [1 19 108 180];
+
+G=tf(sifirlar,kutuplar);
+rlocus(G);
+
+------------------------------------------------------
+
+6.8.Skill-Assessment Exercise 5
+numg=poly([2 4]);
+deng=[1 6 25];
+G=tf(numg,deng)
+rlocus(G)
+z=0.5
+sgrid(z,0)
+
+------------------------------------------------------
+
+7.10.Skill-Assessment Exercise 1
+  % 1 = 1
+%------------------------
+  % (s+2)(s+4) = s^2+6s+8
+
+sifirlar= [1]; 
+kutuplar= [1 6 8];
+
+sys=tf(sifirlar,kutuplar);
+bode(sys);
+
+grid on 
+h=gcr;
+setoptions(h,'MagUnits','abs');
+
+M=10^(a/20)
+a=1.61;
