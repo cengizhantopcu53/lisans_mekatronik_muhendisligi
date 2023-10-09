@@ -1,0 +1,36 @@
+KAYNAKÇA 
+1. https://www.seckin.com.tr/kitap/153845717
+
+İÇERİK
+1.Giriş ve Genel Bilgiler
+2.Hidrostatik
+2.1 Hareketsiz Akışkan İçerisinde Bir Nokta Etrafında Basınç
+2.2 Hidrostatiğin Temel Denge Denklemi
+2.5 Basınç Ölçümü
+2.6 Yüzeylere Etkiyen Hidrostatik Kuvvetler
+2.6.1 Yatay Düzlem Hali
+2.6.2 Eğik Düzlem Hali
+2.6.3 Eğri Yüzey Hali
+3.Akışkan Kinematiği
+3.2 Hız, İvme, Maddesel Türev
+4.Hidrodinamik
+4.1 Giriş
+4.2 Sınır ve Başlangıç Şartları
+4.3 Hidrodinamiğin Temel Denklemleri
+4.3.1 Kütlenin Korunumu Kanunu (Süreklilik Denklemi)
+4.3.2 Momentum Denklemi, Navier-Stokes Denklemi
+4.3.2.3 Sürtünmeli Akışlar İçin Lineer Momentum (Navier-Stokes) Denklemi
+4.3.2.4 Navier-Stokes ve Süreklilik Denklemlerinin Çözümleri
+4.3.2.4.a Biri Hareketli İki Paralel Levha Arasındaki Laminer Akış
+4.3.2.4.c Silindirik Boru İçerisindeki Laminer Akış
+4.3.3 Enerji Denklemi
+4.3.3.1 Sürtünmeli Akışlar İçin Enerji Denklemi
+4.3.3.1.a İki Paralel Levha Arasındaki Tam Gelişmiş Akışta Sıcaklık Profili
+4.3.3.1.b Silindirik Boruda Tam Gelişmiş Akışta Sıcaklık Profili
+4.3.3.2 Sürtünmesiz Akışlar İçin Enerji Denklemi (Bernoulli Denklemi)
+4.3.3.2.d Bir Akım Çizgisi Boyunca Hareketle Bernoulli Denklemin Çıkarılışı
+4.3.5 İçerisinde Akım Makinelerin Bulunduğu Sistemler için Bernoulli Denklemi
+4.3.5.1 İçerisinde Pompa Bulunan Sistemler İçin Bernoulli Denklemi
+4.3.5.2 İçerisinde Türbin Bulunan Sistemler İçin Bernoulli Denklemi
+4.3.6 Bernoulli Denkleminin Uygulamaları
+4.3.6.2 Sıkıştırılamayan Akışkanlarda Debi Ölçümü   

@@ -1,0 +1,11 @@
+İÇERİK
+1.İmalata Giriş 
+2.Malzemelerin Doğası
+3.Malzemelerin Mekanik Özellikleri
+4.Maddelerin Fiziksel Özellikleri
+5.Boyutlar ve Ölçümler
+6.Metaller
+7.Seramikler
+8.Polimerler ve Kompozit Malzemeler
+9.Döküm Prensipleri
+10.Döküm Yöntemleri

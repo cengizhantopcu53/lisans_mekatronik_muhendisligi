@@ -1,0 +1,66 @@
+KAYNAKÇA 
+1. Basic Biomechanics-Susan Hall
+2. Temel Biyomekanik-Nihat Özkaya
+ 
+1.Biyomekanik Nedir 
+1.1 Biyomekanik: Tanım ve Perspektif
+1.2 Problem Çözme Yaklaşımı 
+2.İnsan Hareketini Analiz Etmek İçin Kinematik Kavramlar
+2.1 Hareket Formları
+2.2 Standart Referans Terminolojisi
+2.3 Eklem Hareket Terminolojisi
+3.İnsan Hareketini Analiz Etmek İçin Kinetik Kavramlar
+3.1 Kinetiğe İlişkin Temel Kavramlar
+3.2 İnsan Vücuduna Etki Eden Mekanik Yükler
+3.3 Yüklemenin Etkileri 
+3.4 Kinetik Niceliklerin Ölçümünde Kullanılan Araçlar
+3.5 Vektör Cebiri
+2.Kuvvet Vektörü
+2.1 Kuvvetin Tanımı
+2.2 Vektörel Büyüklük Olarak Kuvvet Özellikleri
+2.3 Kuvvetin Boyut ve Birimleri
+2.4 Kuvvet Sistemleri
+2.5 Dış ve İç Kuvvetler
+2.6 Normal ve Teğet Kuvvetler
+2.7 Çekme ve Basma Kuvveti
+2.8 Eşdüzlem Kuvvetler
+2.9 Eşdoğrultulu Kuvvetler
+2.10 Kesişen Kuvvetler
+2.11 Paralel Kuvvet
+2.12 Yer Çekimi Kuvveti ve Ağırlık
+2.13 Dağılan Kuvvet Sistemleri ve Basınç
+2.14 Sürtünme Kuvvetleri
+3.Moment ve Tork Vektörleri
+3.1 Moment ve Tork Vektörlerinin Tanımı
+3.2 Momentin Büyüklüğü
+3.3 Momentin Yönü
+3.4 Momentin Boyut ve Birimleri
+3.5 Moment Vektörü ile İlgili Bazı Önemli Noktalar
+3.6 Net ve Bileşke Moment
+3.7 Çift ve Çift Momenti
+3.8 Kuvvetlerin Ötelenmesi
+3.9 Vektör Ürünü Olarak Moment
+4.Statik: Dengedeki Sistemler
+4.1 Genel Bakış
+4.2 Newton’un Mekanik Yasaları
+4.3 Denge Koşulları
+4.4 Serbest Cisim Diyagramları
+4.5 Dengedeki Sistemlerin Analiz Yöntemleri
+4.6 Denge Denklemlerini ile Alakalı Notlar
+4.7 Kısıtlar ve Tepkiler
+4.8 Basit Destekli Yapılar
+4.9 Kablo Makara Sistemleri ve Traksiyon Cihazları
+4.10 Ankastre Yapılar
+4.11 Sürtünmeli Sistemler
+4.12 Ağırlık Merkezi Belirleme
+5.Statiğin Biyomekanik Uygulamaları
+5.1 Eklemler
+5.2 Çizgili Kaslar
+5.3 Temel Hususlar
+5.4 Temel Varsayımlar ve Kısıtlamalar
+5.5 Dirseğin Mekaniği            
+5.6 Omuzun Mekaniği
+5.7 Omurganın Mekaniği
+5.8 Kalçanın Mekaniği
+5.9 Dizin Mekaniği
+5.10 Ayak Bileğinin Mekaniği
