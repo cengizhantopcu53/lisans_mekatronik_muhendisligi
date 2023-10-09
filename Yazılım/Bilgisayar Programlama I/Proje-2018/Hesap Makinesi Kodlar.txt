@@ -1,0 +1,81 @@
+number1=get(handles.edit1,'String');
+number2=get(handles.edit2,'String');
+c=number1+number2;
+set(handles.sonuc,'string',number3);
+
+--------------------------------------------------
+
+a=findobj(gcbf,'Tag','edit1');
+number1=str2num(get(a,'String'));
+b=findobj(gcbf,'Tag','edit2');
+number2=str2num(get(b,'String'));
+c=number1+number2;
+number3=findobj(gcbf,'Tag','sonuc');
+set(number3,'String',c);
+
+---------------------------------------------------
+
+butona bastýðýnda ekrana istediðin þeyi yazma komutu ;
+a=findobj(gcbf,'Tag','text2')
+set(a,'String','1');
+
+----------------------------------------------------
+
+butona ard arda bastýðýnda (örenðin1) 111 yazmasýný saðlayan komut
+a=findobj(gcbf,'Tag','text2')
+veri=get(a,'String')
+set(a,'String',strcat(veri,'1'));
+
+------------------------------------------------------------
+
+eþittir komutu için kullanmamýz gereken komut
+c=findobj(gcbf,'Tag','altpanel');
+sonuc=get(c,'String');
+sonuc=str2num(sonuc);
+sonuc=num2str(sonuc);
+c=findobj(gcbf,'Tag','ustpanel');
+set(c,'String',sonuc)
+
+------------------------------------------------
+
+eþittire týkladýktan sonra alt paneldeki sayýlarý
+silip sadece üst panelde sonucu gösterir.(esittir)
+c=findobj(gcbf,'Tag','altpanel');
+sonuc=get(c,'String');
+sonuc=str2num(sonuc);
+sonuc=num2str(sonuc);
+c=findobj(gcbf,'Tag','ustpanel');
+set(c,'String',sonuc)
+x=findobj(gcbf,'Tag','altpanel')
+set(x,'String','');
+
+----------------------------------------------------
+
+ans komutu
+p=findobj(gcbf,'Tag','ustpanel');
+pc=(get(p,'String'));
+r=findobj(gcbf,'Tag','altpanel');
+rc=(get(r,'String'));
+z=findobj(gcbf,'Tag','altpanel');
+set(z,'String',strcat(rc,pc));
+
+---------------------------------
+
+c silme komutu
+c=findobj(gcbf,'Tag','altpanel');
+set(c,'String','');
+clear all;
+
+---------------------------------------------------------
+
+silme komutu (teker teker silme komutu)<=
+a=findobj(gcbf,'Tag','altpanel');
+b=get(a,'String');
+b(end)='';
+c=findobj(gcbf,'Tag','altpanel');
+set(c,'String',b);
+
+-------------------------------------------
+
+
+

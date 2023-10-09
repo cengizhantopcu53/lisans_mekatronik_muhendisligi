@@ -1,0 +1,13 @@
+İÇERİK 
+1.Giriş
+2.C# Programlama ile Görüntü İşleme
+3.Geometrik Dönüşümler
+4.Bulanıklaştırma ve Netleştirme Algoritmaları
+4.1 Bulanıklaştırma Algoritmaları
+4.2 Netleştirme Algoritmaları
+5.Kenar Belirleme Algoritmaları
+6.Resmi Alt Gruplara Ayırma
+7.Operatörler
+7.1 Aritmatik Operatörler
+7.2 Mantıksal Operatörler
+8.Yapay Sinir Ağları

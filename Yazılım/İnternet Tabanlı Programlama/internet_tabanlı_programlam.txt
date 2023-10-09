@@ -1,0 +1,27 @@
+KAYNAKÇA 
+1. http://www.ibrahimcayiroglu.com/
+2. https://www.youtube.com/watch?v=coRfQFg4wug&list=PLKnjBHu2xXNO3DAV2yEdLb3qewr9wBdpB
+3. https://www.youtube.com/playlist?list=PL_f2F0Oyaj49bsuq6iLrg1qyZtekSCgPW
+4. https://www.youtube.com/playlist?list=PLKnjBHu2xXNMc3Qh1VrEdqx9ruO5f_H0k
+5. https://www.free-css.com/template-categories/business?start=84
+6. https://htmlcodex.com/
+
+İÇERİK 
+1.C#
+1.1 Temel Nesneler ve Koşul İfadeleri
+1.2 Döngüler
+1.3 Diziler
+1.4 Fonksiyonlar
+2.Html
+3.Asp.Net
+3.1.1 Link Verme ve Bilgi Taşıma
+3.1.2 Oturum Açma
+3.2.1 Masterpage Sayfası
+3.2.2 Veritabanı Oluşturma ve Görüntüleme
+3.3 Okuma, Kaydetme, Güncelleme, Silme İşlemleri
+3.4 Fotograf Yükleme
+3.5 Gridview İçerisinde Okuma, Kaydetme, Güncelleme, Silme İşlemleri
+3.6 Fotograf Sıralama 
+3.7 Form Doğrulama(Validation) İşlemleri
+3.8 SQL Sorgulamanın Detayları
+4.Css
