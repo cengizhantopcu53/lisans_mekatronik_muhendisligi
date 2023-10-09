@@ -1,0 +1,12 @@
+KAYNAKÇA 
+1. https://www.youtube.com/playlist?list=PLgwJf8NK-2e4Wvn3J1kUqnPO-KFe46omw
+
+İÇERİK
+1.8051 Mimarisi
+1.1 Hafıza Organizasyonu
+1.2 Yazılım Altyapısı
+3.Timer/Counter
+4.Pwm
+5.Seri Haberleşme
+6.Kesme
+7.Lcd

@@ -1,0 +1,22 @@
+KAYNAKÇA  
+1. PLC Programlama ve S7 1200 - Yavuz Eminoğlu
+https://www.kitapyurdu.com/kitap/plc-programlama-ve-s7-1200/295912.html
+1. https://hbogm.meb.gov.tr/www/mesleki-ve-teknik-acik-ogretim-okulu-elektrik-tesisatciligi-ders-notlari/icerik/118
+2. https://www.elektrikrehberiniz.com/role/role-nedir-1834/
+
+İÇERİK 
+1.Giriş  
+2.Kontaktör ve Röleler
+3.PLC'nin Yapısı ve Çalışma Prensibi
+3.1 Start-Stop Butonu Kullanma
+3.2 Mühürleme İşlemi
+4.Mantık Fonksiyonları 
+5.Dahili Bellek Alanları
+6.Hafıza Fonksiyonu
+6.1 Hafıza Fonksiyonun Oluşması
+6.2 Hafıza Elemanların Karşılıklı Olarak Kilitlenmesi
+6.3 Kenar Darbeleri
+7.Zaman Fonksiyonu
+8.Sayma Fonksiyonu
+9.Sayısal Operasyonlar
+10. Analog Değerlerin İşlenmesi

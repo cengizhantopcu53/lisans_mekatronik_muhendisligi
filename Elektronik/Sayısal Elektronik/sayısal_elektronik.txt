@@ -1,0 +1,17 @@
+KAYNAKÇA
+1. https://docs.google.com/forms/d/e/1FAIpQLSdHulAl2ev8Nu80l2Q29zO4t_UCuYUwbRFx1m0L0_Q6npJiSQ/viewform
+2. http://elektronikderstakip.blogspot.com/2015/04/dijital-elektronik-flip-flop-sinyal.html
+
+İÇERİK 
+1.Sayı Sistemleri
+2.Boole Cebri 
+3.Lojik Kapılar
+4.Min.Term ve Max.Term Yapılar
+5.Fonksiyonların Sadeleştirilmesi
+6.Karno Diyagramları
+7.Aritmatik İşlem Devreleri
+8.Decoders ve Encoders
+9.Multiplexer ve Demultiplexer
+10.Multivibratörler
+11.Flip-Floplar
+12.Sayıcılar
