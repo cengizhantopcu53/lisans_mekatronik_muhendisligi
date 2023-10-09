@@ -1,0 +1,10 @@
+KAYNAKÇA 
+1. Robot Dinamiği ve Kontrolü-Dr. Zafer Bingül, Dr. Serdar Küçük
+2. https://www.seckin.com.tr/kitap/154169959
+3. https://youtu.be/pCZSh8wZLSA
+4. https://youtu.be/V3DXNZIbz28
+5. https://grabcad.com/library/kuka-kr5-850-1/files
+6. https://grabcad.com/library/kuka-kr-5-r850/details?folder_id=85715
+7. https://grabcad.com/library/robot-kuka-kr-5-r850-1
+8. https://mrrol.wordpress.com/2015/12/29/matlab-simulink-3-eksen-planar-robot-ileri-yon-kinematik-hesaplari/
+9. https://www.youtube.com/playlist?list=PLoVX4C46JKvrPyH-mEB6WNmejRwLP80F-

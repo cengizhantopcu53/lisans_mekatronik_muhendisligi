@@ -1,0 +1,5 @@
+İÇERİK 
+1.Giriş
+2.Mamdani
+3.Sugeno
+4.Tusomato

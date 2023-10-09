@@ -1,0 +1,13 @@
+KAYNAKÇA
+1. https://www.youtube.com/watch?v=pS41HNUKw5s
+2. https://www.youtube.com/watch?v=7iCWoxFGJyw
+3. https://www.youtube.com/watch?v=Wo5YWXDRXv8&t=287s
+
+İÇERİK 
+1.Giriş
+2.Hücre ve Bileşenleri
+3.Ağ Topolojisi
+4.Normalizasyon
+5.İleri Doğru Hesaplama
+6.Geriye Doğru Hesaplama      
+7.Performans Kriterleri

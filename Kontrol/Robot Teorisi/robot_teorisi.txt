@@ -1,0 +1,47 @@
+KAYNAKÇA 
+1. Robot Kinematiği-Dr. Zafer Bingül, Dr. Serdar Küçük
+2. https://www.kitapyurdu.com/kitap/robot-kinematigi/364888.html
+3. https://mekatroniksayfa.blogspot.com/2015/01/robot-kinematigi-ve-dinamigi.html
+4. https://www.youtube.com/playlist?list=PL8P48CopbfB8PQXCj_AZK74uYprySXspg
+5. https://www.youtube.com/playlist?list=PLvUIaTBz_jRnDC_4V4YmpBXTeuNZvnvjA
+6. https://www.medcalc.org/manual/atan2-function.php
+7. https://matrixcalc.org/tr/
+8. https://www.rapidtables.com/convert/number/radians-to-degrees.html
+
+1.Genel Kavramlar
+1.1 Giriş
+2.Genel Tanımlamalar ve Dönüşümler
+2.1 Giriş
+2.2 Konum, Yönelim ve Koordinat Sistemlerinin Tanımlanması
+2.3 Genel Dönüşümler
+2.4 İşlemler
+2.5 Dönüşüm Matrislerinin İleri Yönlü Çarpılması
+2.6 Dönüşüm Matrislerinin Önden Çarpılması
+2.7 Dönüşüm Matrisinin Özellikleri
+2.8 Ardışık Dönüşümler
+2.9 Özel Yönelim Tanımlamaları
+2.9.1 Roll-Pitch-Yaw (XYZ Sabit) Açı Seti
+2.9.2 ZYX Euler Açı Seti
+2.9.3 Eşdeğer Açı-Eksen Seti
+2.12 Vektörsel Büyüklükler
+3.İleri Kinematik
+3.1 Giriş 
+3.2 Eklem Değişkenlerinin Belirlenmesi
+3.3. Endüstriyel Robotlarda Kullanılan Bilek Düzenleşimleri
+3.4. Altı Serbestlik Derecesine Sahip Robotların İleri Yön Kinematiği
+4.Ters Kinematik
+4.1 Giriş 
+4.2 Ters Kinematik Problemin Yapısı
+4.3 Ters Kinematik Çözüm (Analitik Çözüm Yaklaşımı)
+5.Jakobiyen
+5.1 Konum Vektörlerinde Yer Değiştirme
+5.2 Açısal Hız Vektörü
+5.3 Anlık Doğrusal ve Açısal Hız
+5.4 Robot Manipülatörlerinin Komşu Bağları Arasındaki Hız İlişkisi
+5.5 Jakobiyen Elde Etme Yöntemleri
+5.5.1 İteratif yöntem
+5.5.2 Doğrudan Türev Yöntemi
+5.5.3 Vektörsel Çarpım Yöntemi
+6.Yörünge Planlanması
+6.1 Eklem Uzayında Yörünge Planlaması
+6.2 Kartezyen Uzayda Yörünge Planlaması

@@ -1,0 +1,27 @@
+KAYNAKÇA
+1. https://www.youtube.com/playlist?list=PLfgGwEK05aajFuJD9S8BU3tiD-yvloSXQ
+2. https://www.youtube.com/playlist?list=PLdcoZed79Zud8kBBBR6kXX7MZ4im5Eabh
+3. http://www.tuncayuzun.com/DersNot_OtkKont.htm
+4. https://www.fxsolver.com/solve/
+5. http://www.calclab.net/dogrusalint.html
+6. https://www.calclab.net/ucuncuderece.html
+7. https://www.unitconverters.net/electrostatic-capacitance/farad-to-microfarad.htm
+8. https://lpsa.swarthmore.edu/Root_Locus/RLDraw.html
+9. https://www.wolframalpha.com/
+
+İÇERİK
+8.Kök Yer Eğrisi Teknikleri
+8.1 Giriş
+8.2 Kök Yer Eğrisi Tanımı
+8.3 Kök Yer Eğrisinin Özellikleri
+8.4 Kök Yer Eğrisi Çizimi
+8.5 Çizimi İyileştirme
+9.Kök Yer Eğrisi Kullanarak Tasarım
+9.1 Giriş
+9.2 Seri Kompanzasyon Kullanarak Kararlı Durum Hatasını İyileştirme
+9.3 Seri Kompanzasyon Kullanarak Geçici Cevabı İyileştirme
+9.4 Kararlı Durum Hatasını ve Geçici Cevabı İyileştirme
+9.6 Kompanzasyonun Fiziksel Gerçekleşmesi
+10.Frekans Cevabı Analizleri
+10.1 Giriş
+10.2 Asimptotik Yaklaşımlar: Bode Grafikleri
